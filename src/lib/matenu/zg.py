@@ -18,7 +18,7 @@ try:
     try:
         iface = client.ZeitgeistDBusInterface()
     except RuntimeError:
-        print "Error: Could not connect to Zeitgeist."
+        print ("Error: Could not connect to Zeitgeist.")
         iface = None
 except:
     iface = None
@@ -57,11 +57,11 @@ def get_most_used_for_app(name,maxres):
 
 
 if __name__ == "__main__":
-    print "Testing with pluma.desktop"
+    print ("Testing with pluma.desktop")
     results = get_recent_for_app("pluma.desktop")
     for event in results:
         timestamp = int(event.timestamp) / 1000 # Zeitgeist timestamps are in msec
-        print date.fromtimestamp(timestamp).strftime("%d %B %Y")
+        print (date.fromtimestamp(timestamp).strftime("%d %B %Y")
         for subject in event.get_subjects():
-            print " -", subject.text, ":", subject.uri
+            print (" -", subject.text, ":", subject.uri)
 
