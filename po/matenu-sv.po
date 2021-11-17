@@ -1,0 +1,754 @@
+# Swedish translation for matenu
+# Copyright (c) 2009 Rosetta Contributors and Canonical Ltd 2009
+# This file is distributed under the same license as the matenu package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2009.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: matenu\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2010-06-16 22:37+0000\n"
+"PO-Revision-Date: 2010-02-21 07:32+0000\n"
+"Last-Translator: Kristian <kimocoder> Bremvaag <Unknown>\n"
+"Language-Team: Swedish <sv@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2010-07-07 17:36+0000\n"
+"X-Generator: Launchpad (build Unknown)\n"
+
+#: matenu/src/lib/matenu/Globals.py:73
+msgid ""
+"MateNu detected a malicious script in this theme.\n"
+"The script was blocked!\n"
+"You should uninstall the selected theme and contact the website where you "
+"got it.\n"
+"\n"
+"The script that tried to run was:"
+msgstr ""
+"MateNu upptäckt ett skadligt skript i theme.The manuset var blockerad! Du "
+"bör avinstallera det valda temat och kontakta den webbplats där du fick "
+"it.The skript som försökte köra var:"
+
+#: matenu/src/lib/matenu/Globals.py:565
+msgid "All Applications"
+msgstr "Alla program"
+
+#: matenu/src/lib/matenu/Globals.py:565
+msgid "All Programs"
+msgstr "Alla program"
+
+#: matenu/src/lib/matenu/Globals.py:565
+msgid "Applications"
+msgstr "Applikationer"
+
+#: matenu/src/lib/matenu/Globals.py:565
+msgid "Connect"
+msgstr "Anslut"
+
+#: matenu/src/lib/matenu/Globals.py:565
+msgid "Connect To"
+msgstr "Anslut till"
+
+#: matenu/src/lib/matenu/Globals.py:565
+msgid "Connect To Server"
+msgstr "Anslut till server"
+
+#: matenu/src/lib/matenu/Globals.py:565
+msgid "Connect to Server"
+msgstr "Anslut till server"
+
+#: matenu/src/lib/matenu/Globals.py:565
+msgid "Control Center"
+msgstr "Kontrollcenter"
+
+#: matenu/src/lib/matenu/Globals.py:565
+msgid "Distro"
+msgstr "Distribution"
+
+#: matenu/src/lib/matenu/Globals.py:565
+msgid "Documents"
+msgstr "Dokument"
+
+#: matenu/src/lib/matenu/Globals.py:565
+msgid "Execute Application"
+msgstr "Starta applikation"
+
+#: matenu/src/lib/matenu/Globals.py:565
+msgid "Favorites"
+msgstr "Favoriter"
+
+#: matenu/src/lib/matenu/Globals.py:565
+msgid "Games"
+msgstr "Spel"
+
+#: matenu/src/lib/matenu/Globals.py:565
+msgid "Hdd"
+msgstr "Hdd"
+
+#: matenu/src/lib/matenu/Globals.py:565
+msgid "Help And Support"
+msgstr "Hjälp och support"
+
+#: matenu/src/lib/matenu/Globals.py:565
+msgid "Help Center"
+msgstr "Hjälpcenter"
+
+#: matenu/src/lib/matenu/Globals.py:565
+msgid "History"
+msgstr "Historik"
+
+#: matenu/src/lib/matenu/Globals.py:565
+msgid "Home"
+msgstr "Hem"
+
+#: matenu/src/lib/matenu/Globals.py:565
+msgid "Install Software"
+msgstr "Installera mjukvara"
+
+#: matenu/src/lib/matenu/Globals.py:565
+msgid "Leave"
+msgstr "Lämna"
+
+#: matenu/src/lib/matenu/Globals.py:565
+msgid "Lock"
+msgstr "Lås"
+
+#: matenu/src/lib/matenu/Globals.py:565
+msgid "Lock Computer"
+msgstr "Lås datorn"
+
+#: matenu/src/lib/matenu/Globals.py:565
+msgid "Log Out"
+msgstr "Logga ut"
+
+#: matenu/src/lib/matenu/Globals.py:565
+msgid "Menu"
+msgstr "Meny"
+
+#: matenu/src/lib/matenu/Globals.py:565
+msgid "Music"
+msgstr "Musik"
+
+#: matenu/src/lib/matenu/Globals.py:565
+msgid "My Computer"
+msgstr "Den här datorn"
+
+#: matenu/src/lib/matenu/Globals.py:565
+msgid "Personal Folder"
+msgstr "Personlig mapp"
+
+#: matenu/src/lib/matenu/Globals.py:565
+msgid "Pictures"
+msgstr "Bilder"
+
+#: matenu/src/lib/matenu/Globals.py:565
+msgid "Power"
+msgstr "Energi"
+
+#: matenu/src/lib/matenu/Globals.py:565
+msgid "Programs"
+msgstr "Program"
+
+#: matenu/src/lib/matenu/Globals.py:565
+msgid "Recent"
+msgstr "Senast"
+
+#: matenu/src/lib/matenu/Globals.py:565
+msgid "Recent Applications"
+msgstr "Senaste program"
+
+#: matenu/src/lib/matenu/Globals.py:565
+msgid "Recent Documents"
+msgstr "Senaste dokumenten"
+
+#: matenu/src/lib/matenu/Globals.py:565
+msgid "Recent Items"
+msgstr "Senaste objekten"
+
+#: matenu/src/lib/matenu/Globals.py:565
+msgid "Run Application"
+msgstr "Kör program"
+
+#: matenu/src/lib/matenu/Globals.py:565
+msgid "Search for Files"
+msgstr "Sök efter filer"
+
+#: matenu/src/lib/matenu/Globals.py:565
+msgid "Show History"
+msgstr "Visa historik"
+
+#: matenu/src/lib/matenu/Globals.py:565
+msgid "Shut Down"
+msgstr "Stäng av"
+
+#: matenu/src/lib/matenu/Globals.py:565
+msgid "Shut Down..."
+msgstr "Stäng av..."
+
+#: matenu/src/lib/matenu/Globals.py:565
+msgid "Shutdown Computer"
+msgstr "Stäng av datorn"
+
+#: matenu/src/lib/matenu/Globals.py:565
+msgid "Start"
+msgstr "Start"
+
+#: matenu/src/lib/matenu/Globals.py:565
+msgid "Status"
+msgstr "Status"
+
+#: matenu/src/lib/matenu/Globals.py:565
+msgid "Used"
+msgstr "Använd"
+
+#: matenu/src/lib/matenu/Globals.py:565
+msgid "User"
+msgstr "Användare"
+
+#: matenu/src/lib/matenu/Globals.py:565
+msgid "Videos"
+msgstr "Videor"
+
+#: matenu/src/lib/matenu/Globals.py:565
+msgid "Web Bookmarks"
+msgstr "Webbokmärken"
+
+#: matenu/src/lib/matenu/Globals.py:565
+msgid "Web Sites"
+msgstr "Webbplatser"
+
+#: matenu/src/lib/matenu/Globals.py:565
+#: matenu/src/lib/matenu/MateNu-Settings.py:342
+#: matenu/src/lib/matenu/Menu_Widgets.py:1078
+#: matenu/src/lib/matenu/Menu_Widgets.py:1089
+#: matenu/src/lib/matenu/Menu_Widgets.py:1118
+#: matenu/src/lib/matenu/Menu_Widgets.py:1149
+#: matenu/src/lib/matenu/Menu_Widgets.py:1334
+#: matenu/src/lib/matenu/Menu_Widgets.py:1338
+msgid "Search"
+msgstr "Sök"
+
+#: matenu/src/lib/matenu/Globals.py:565
+#: matenu/src/lib/matenu/MateNu-Settings.py:362
+msgid "Control Panel"
+msgstr "Kontrollpanel"
+
+#: matenu/src/lib/matenu/Globals.py:565
+#: matenu/src/lib/matenu/MateNu-Settings.py:372
+msgid "Package Manager"
+msgstr "Pakethanterare"
+
+#: matenu/src/lib/matenu/Globals.py:565
+#: matenu/src/lib/matenu/MateNu-Settings.py:382
+msgid "Help"
+msgstr "Hjälp"
+
+#: matenu/src/lib/matenu/Globals.py:565
+#: matenu/src/lib/matenu/MateNu-Settings.py:402
+#: matenu/src/lib/matenu/Menu_Items.py:303
+msgid "Lock Screen"
+msgstr "Lås skärm"
+
+#: matenu/src/lib/matenu/Globals.py:565
+#: matenu/src/lib/matenu/MateNu-Settings.py:412
+#: matenu/src/lib/matenu/Menu_Items.py:302
+msgid "Logout"
+msgstr "Logga ut"
+
+#: matenu/src/lib/matenu/Globals.py:565
+#: matenu/src/lib/matenu/MateNu-Settings.py:443
+#: matenu/src/lib/matenu/Menu_Items.py:300
+msgid "Suspend"
+msgstr "Vänteläge"
+
+#: matenu/src/lib/matenu/Globals.py:565
+#: matenu/src/lib/matenu/MateNu-Settings.py:453
+#: matenu/src/lib/matenu/Menu_Items.py:301
+msgid "Hibernate"
+msgstr "Viloläge"
+
+#: matenu/src/lib/matenu/Globals.py:565
+#: matenu/src/lib/matenu/MateNu-Settings.py:464
+msgid "Run"
+msgstr "Starta"
+
+#: matenu/src/lib/matenu/Globals.py:565
+#: matenu/src/lib/matenu/MateNu-Settings.py:474
+#: matenu/src/lib/matenu/Menu_Items.py:298
+msgid "Shutdown"
+msgstr "Stäng av"
+
+#: matenu/src/lib/matenu/Globals.py:565
+#: matenu/src/lib/matenu/Menu_Items.py:256
+#: matenu/src/lib/matenu/Menu_Widgets.py:549
+#: matenu/src/lib/matenu/Menu_Widgets.py:721
+#: matenu/src/lib/matenu/Menu_Widgets.py:893
+msgid "About Me"
+msgstr "Om Mig"
+
+#: matenu/src/lib/matenu/Globals.py:565
+#: matenu/src/lib/matenu/Menu_Items.py:383
+msgid "Home Folder"
+msgstr "Hemkatalog"
+
+#: matenu/src/lib/matenu/Globals.py:565
+#: matenu/src/lib/matenu/Menu_Items.py:384
+msgid "Computer"
+msgstr "Dator"
+
+#: matenu/src/lib/matenu/Globals.py:565
+#: matenu/src/lib/matenu/Menu_Items.py:385
+msgid "Network"
+msgstr "Nätverk"
+
+#: matenu/src/lib/matenu/Globals.py:565
+#: matenu/src/lib/matenu/Menu_Items.py:489
+#: matenu/src/lib/matenu/Menu_Items.py:524
+msgid "System"
+msgstr "System"
+
+#: matenu/src/lib/matenu/Globals.py:565
+#: matenu/src/lib/matenu/Menu_Items.py:556
+msgid "Most Used"
+msgstr ""
+
+#: matenu/src/lib/matenu/Globals.py:565
+#: matenu/src/lib/matenu/Menu_Items.py:556
+msgid "Recently Used"
+msgstr "Senast använda"
+
+#: matenu/src/lib/matenu/MateNu-Settings.py:61
+msgid "MateNu Settings"
+msgstr "MateNu inställningar"
+
+#: matenu/src/lib/matenu/MateNu-Settings.py:83
+msgid "Ok"
+msgstr "Ok"
+
+#: matenu/src/lib/matenu/MateNu-Settings.py:85
+msgid "Apply"
+msgstr "Verkställ"
+
+#: matenu/src/lib/matenu/MateNu-Settings.py:87
+msgid "Cancel"
+msgstr "Avbryt"
+
+#: matenu/src/lib/matenu/MateNu-Settings.py:92
+msgid "Themes"
+msgstr "Teman"
+
+#: matenu/src/lib/matenu/MateNu-Settings.py:93
+#: matenu/src/lib/matenu/MateNuTray.py:42
+msgid "Preferences"
+msgstr "Egenskaper"
+
+#: matenu/src/lib/matenu/MateNu-Settings.py:94
+#: matenu/src/lib/matenu/MateNuTray.py:43
+msgid "About"
+msgstr "Om"
+
+#: matenu/src/lib/matenu/MateNu-Settings.py:95
+msgid "Commands"
+msgstr "Kommandon"
+
+#: matenu/src/lib/matenu/MateNu-Settings.py:114
+msgid "Menu Selection"
+msgstr "Menyval"
+
+#: matenu/src/lib/matenu/MateNu-Settings.py:137
+#: matenu/src/lib/matenu/MateNu-Settings.py:165
+#: matenu/src/lib/matenu/MateNu-Settings.py:195
+#: matenu/src/lib/matenu/MateNu-Settings.py:216
+msgid "Install"
+msgstr "Installera"
+
+#: matenu/src/lib/matenu/MateNu-Settings.py:139
+#: matenu/src/lib/matenu/MateNu-Settings.py:167
+#: matenu/src/lib/matenu/MateNu-Settings.py:197
+#: matenu/src/lib/matenu/MateNu-Settings.py:218
+#: matenu/src/lib/matenu/MateNu-Settings.py:771
+msgid "Uninstall"
+msgstr "Avinstallera"
+
+#: matenu/src/lib/matenu/MateNu-Settings.py:151
+msgid "Button Selection"
+msgstr "Knappval"
+
+#: matenu/src/lib/matenu/MateNu-Settings.py:181
+msgid "Icon Selection"
+msgstr "Ikonval"
+
+#: matenu/src/lib/matenu/MateNu-Settings.py:213
+msgid "Sound theme"
+msgstr "Ljudtema"
+
+#: matenu/src/lib/matenu/MateNu-Settings.py:235
+msgid "Bind keyboad key"
+msgstr "Bind keyboad nyckel"
+
+#: matenu/src/lib/matenu/MateNu-Settings.py:242
+msgid "Show Internet and Email Buttons"
+msgstr "Visa internet- och epost-knappar"
+
+#: matenu/src/lib/matenu/MateNu-Settings.py:244
+msgid "Use Gtk Theme Colors in Program List"
+msgstr "Använd Gtk-temafärger i programlistan"
+
+#: matenu/src/lib/matenu/MateNu-Settings.py:246
+msgid "Tab Selection on Mouse Hover"
+msgstr "Tabbval vid mus-hovring"
+
+#: matenu/src/lib/matenu/MateNu-Settings.py:253
+msgid "Icon Size in Program List"
+msgstr "Ikonstorlek i programlistan"
+
+#: matenu/src/lib/matenu/MateNu-Settings.py:255
+msgid "Number of Items in Recent Items List"
+msgstr "Antal objekt i Senaste objekt listan"
+
+#: matenu/src/lib/matenu/MateNu-Settings.py:269
+msgid "Listview"
+msgstr ""
+
+#: matenu/src/lib/matenu/MateNu-Settings.py:270
+msgid "Buttons (expanded)"
+msgstr "Knappar (expanderad)"
+
+#: matenu/src/lib/matenu/MateNu-Settings.py:271
+msgid "Buttons (fixed)"
+msgstr "Knappar (fixerad)"
+
+#: matenu/src/lib/matenu/MateNu-Settings.py:272
+msgid "Iconview (fastest)"
+msgstr ""
+
+#: matenu/src/lib/matenu/MateNu-Settings.py:273
+msgid "Cairo (experimental)"
+msgstr "Cairo (experimentiell)"
+
+#: matenu/src/lib/matenu/MateNu-Settings.py:276
+msgid "Tab hover effect"
+msgstr "Tab hover effekt"
+
+#: matenu/src/lib/matenu/MateNu-Settings.py:278
+msgid "None"
+msgstr "Ingen"
+
+#: matenu/src/lib/matenu/MateNu-Settings.py:279
+msgid "Grow"
+msgstr "Väx"
+
+#: matenu/src/lib/matenu/MateNu-Settings.py:280
+msgid "Black and White"
+msgstr "Svart och vitt"
+
+#: matenu/src/lib/matenu/MateNu-Settings.py:281
+msgid "Blur"
+msgstr "Oskärpa"
+
+#: matenu/src/lib/matenu/MateNu-Settings.py:282
+msgid "Glow"
+msgstr "Glöd"
+
+#: matenu/src/lib/matenu/MateNu-Settings.py:283
+msgid "Saturate"
+msgstr "Mättare"
+
+#: matenu/src/lib/matenu/MateNu-Settings.py:286
+msgid "Program list type"
+msgstr "Programlist typ"
+
+#: matenu/src/lib/matenu/MateNu-Settings.py:287
+msgid "Use system icons instead of theme icons"
+msgstr "Använd systemikoner istället för temaikoner"
+
+#: matenu/src/lib/matenu/MateNu-Settings.py:289
+msgid "Use distributor logo instead of button theme"
+msgstr ""
+
+#: matenu/src/lib/matenu/MateNu-Settings.py:291
+msgid "Show thumbnails in recent items when available"
+msgstr "Visa miniatyrbilder i senaste objekt om möjligt"
+
+#: matenu/src/lib/matenu/MateNu-Settings.py:293
+msgid "Show tooltips in program list"
+msgstr "Visa tipsbubblor i programlistan"
+
+#: matenu/src/lib/matenu/MateNu-Settings.py:296
+msgid "Activate Compiz blur effect on MateNu window"
+msgstr "Aktivera Compiz blur effekt på MateNu fönster"
+
+#: matenu/src/lib/matenu/MateNu-Settings.py:303
+msgid "Disable Places and System in program list"
+msgstr ""
+
+#: matenu/src/lib/matenu/MateNu-Settings.py:352
+msgid "Network Config"
+msgstr "Nätverkskonfigurering"
+
+#: matenu/src/lib/matenu/MateNu-Settings.py:392
+msgid "Shutdown Dialog"
+msgstr "Avstängningsdialogruta"
+
+#: matenu/src/lib/matenu/MateNu-Settings.py:422
+msgid "Logout Dialog"
+msgstr "Utloggdialogruta"
+
+#: matenu/src/lib/matenu/MateNu-Settings.py:432
+msgid "Restart"
+msgstr "Starta om"
+
+#: matenu/src/lib/matenu/MateNu-Settings.py:484
+msgid "User about"
+msgstr "Om användaren"
+
+#: matenu/src/lib/matenu/MateNu-Settings.py:494
+#: matenu/src/lib/matenu/Mate_Me.py:127
+#: matenu/src/lib/matenu/Menu_Items.py:575
+msgid "Open as Administrator"
+msgstr "Öppna som administratör"
+
+#: matenu/src/lib/matenu/MateNu-Settings.py:504
+msgid "Menu Editor"
+msgstr ""
+
+#: matenu/src/lib/matenu/MateNu-Settings.py:544
+msgid "Donate"
+msgstr "Donera"
+
+#: matenu/src/lib/matenu/MateNu-Settings.py:547
+msgid "Download More Themes"
+msgstr "Ladda ner fler teman"
+
+#: matenu/src/lib/matenu/MateNu-Settings.py:550
+msgid "MateNu Themes Specifications"
+msgstr "MateNu Teman Specifikationer"
+
+#: matenu/src/lib/matenu/MateNu-Settings.py:553
+msgid "Report Bug"
+msgstr "Rapportera bugg"
+
+#: matenu/src/lib/matenu/MateNu-Settings.py:556
+msgid "Help Translate"
+msgstr "Hjälp till att översätta"
+
+#: matenu/src/lib/matenu/MateNu-Settings.py:559
+msgid "Visit Homepage"
+msgstr "Besök hemsida"
+
+#: matenu/src/lib/matenu/MateNu-Settings.py:562
+msgid "Credits"
+msgstr "Tack till"
+
+#: matenu/src/lib/matenu/MateNu-Settings.py:580
+#: matenu/src/lib/matenu/MateNu.py:149
+#: matenu/src/lib/matenu/MateNu.py:228
+#: matenu/src/lib/matenu/MateNu_rewrite.py:238
+#: matenu/src/lib/matenu/MateNu_rewrite.py:313
+msgid "Menu needs to restart , restart now?"
+msgstr "Menyn behöver startas om, starta om nu?"
+
+#: matenu/src/lib/matenu/MateNu-Settings.py:771
+msgid "theme"
+msgstr "tema"
+
+#: matenu/src/lib/matenu/MateNu-Settings.py:788
+msgid "Install a new theme"
+msgstr "Installera nytt tema"
+
+#: matenu/src/lib/matenu/MateNu-Settings.py:812
+msgid "Error - Theme package is corrupt!"
+msgstr ""
+
+#: matenu/src/lib/matenu/MateNu-Settings.py:833
+#: matenu/src/lib/matenu/MateNu-Settings.py:842
+#: matenu/src/lib/matenu/MateNu-Settings.py:849
+#: matenu/src/lib/matenu/MateNu-Settings.py:865
+msgid ""
+"Error - theme not installed\n"
+"Maybe the Theme was packaged incorrectly\n"
+"Try to install the Theme manually"
+msgstr ""
+"Fel - temat inte installerat\n"
+"Eventuellt var temat inte paketerat korrekt\n"
+"Försök installera temat manuellt"
+
+#: matenu/src/lib/matenu/MateNu-Settings.py:855
+msgid "Theme exists. Continue?"
+msgstr "Temat finns redan. Fortsätta?"
+
+#: matenu/src/lib/matenu/MateNu-Settings.py:863
+msgid "Theme installed"
+msgstr "Temat installerat"
+
+#: matenu/src/lib/matenu/MateNu-Settings.py:874
+#: matenu/src/lib/matenu/MateNu-Settings.py:893
+msgid ""
+"This theme was created for a previous version of MateNu.\n"
+"The theme was automaticly updated in order to work properly."
+msgstr ""
+
+#: matenu/src/lib/matenu/MateNuTray.py:44
+msgid "Edit Menus"
+msgstr "Redigera menyer"
+
+#: matenu/src/lib/matenu/MateNuTray.py:45
+msgid "Quit"
+msgstr "Avsluta"
+
+#: matenu/src/lib/matenu/Mate_Me.py:87
+#: matenu/src/lib/matenu/Menu_Items.py:667
+msgid "added to favorites list"
+msgstr "läggas till i listan Favoriter"
+
+#: matenu/src/lib/matenu/Mate_Me.py:97
+#: matenu/src/lib/matenu/Menu_Items.py:678
+msgid "removed from favorites list"
+msgstr "bort från listan Favoriter"
+
+#: matenu/src/lib/matenu/Mate_Me.py:105
+#: matenu/src/lib/matenu/Menu_Items.py:686
+msgid "added to system startup"
+msgstr "tillsätts systemstarten"
+
+#: matenu/src/lib/matenu/Mate_Me.py:113
+#: matenu/src/lib/matenu/Menu_Items.py:694
+msgid "removed from system startup"
+msgstr "bort från systemstarten"
+
+#: matenu/src/lib/matenu/Mate_Me.py:131
+#: matenu/src/lib/matenu/Menu_Items.py:618
+msgid "Add to Favorites"
+msgstr "Lägg till favorit"
+
+#: matenu/src/lib/matenu/Mate_Me.py:135
+#: matenu/src/lib/matenu/Menu_Items.py:621
+msgid "Remove from Favorites"
+msgstr "Ta bort favorit"
+
+#: matenu/src/lib/matenu/Mate_Me.py:138
+#: matenu/src/lib/matenu/Menu_Items.py:623
+msgid "Create Desktop Shortcut"
+msgstr "Skapa skrivbordsgenväg"
+
+#: matenu/src/lib/matenu/Mate_Me.py:142
+#: matenu/src/lib/matenu/Menu_Items.py:626
+msgid "Remove from System Startup"
+msgstr "Ta bort från systemuppstart"
+
+#: matenu/src/lib/matenu/Mate_Me.py:144
+#: matenu/src/lib/matenu/Menu_Items.py:628
+msgid "Add to System Startup"
+msgstr "Lägg till systemuppstart"
+
+#: matenu/src/lib/matenu/Menu_Items.py:257
+msgid "Appearance"
+msgstr "Utseende"
+
+#: matenu/src/lib/matenu/Menu_Items.py:258
+msgid "Menu editor"
+msgstr "Menyredigerare"
+
+#: matenu/src/lib/matenu/Menu_Items.py:259
+msgid "Screensaver"
+msgstr "Skärmsläckare"
+
+#: matenu/src/lib/matenu/Menu_Items.py:260
+msgid "System Monitor"
+msgstr "Systemövervakare"
+
+#: matenu/src/lib/matenu/Menu_Items.py:261
+msgid "MateNu settings utility"
+msgstr "MateNus inställningsverktyg"
+
+#: matenu/src/lib/matenu/Menu_Items.py:281
+msgid ""
+"No favorites\n"
+"Use the mouse right button\n"
+"to add or remove favorites"
+msgstr ""
+"Inga favoriter\n"
+"Använd höger musknapp för \n"
+"att lägga till eller ta bort favoriter"
+
+#: matenu/src/lib/matenu/Menu_Items.py:299
+msgid "Reboot"
+msgstr "Starta om"
+
+#: matenu/src/lib/matenu/Menu_Items.py:326
+msgid "Clear recent documents"
+msgstr "Rensa senaste dokumenten"
+
+#: matenu/src/lib/matenu/Menu_Items.py:364
+msgid "File System"
+msgstr "Filsystem"
+
+#: matenu/src/lib/matenu/Menu_Items.py:386
+#: matenu/src/lib/matenu/Menu_Items.py:613
+msgid "Trash"
+msgstr "Papperskorg"
+
+#: matenu/src/lib/matenu/Menu_Items.py:434
+msgid "No items matched your search criteria"
+msgstr "Inga objekt funna"
+
+#: matenu/src/lib/matenu/Menu_Items.py:438
+msgid "Found %s results to your search"
+msgstr "Hittade %s resultat"
+
+#: matenu/src/lib/matenu/Menu_Items.py:475
+msgid "Browse Internet"
+msgstr "Surfa på internet"
+
+#: matenu/src/lib/matenu/Menu_Items.py:476
+msgid "E-mail"
+msgstr "E-post"
+
+#: matenu/src/lib/matenu/Menu_Items.py:481
+#: matenu/src/lib/matenu/Menu_Items.py:516
+#: matenu/src/lib/matenu/Menu_Items.py:572
+#: matenu/src/lib/matenu/Menu_Widgets.py:1588
+#: matenu/src/lib/matenu/Menu_Widgets.py:1962
+#: matenu/src/lib/matenu/Menu_Widgets.py:2241
+msgid "Back"
+msgstr "Tillbaka"
+
+#: matenu/src/lib/matenu/Menu_Items.py:485
+#: matenu/src/lib/matenu/Menu_Items.py:527
+msgid "Places"
+msgstr "Platser"
+
+#: matenu/src/lib/matenu/Menu_Items.py:602
+msgid "Open with"
+msgstr ""
+
+#: matenu/src/lib/matenu/Menu_Items.py:615
+msgid "Empty Trash"
+msgstr ""
+
+#: matenu/src/lib/matenu/Menu_Widgets.py:1598
+#: matenu/src/lib/matenu/Menu_Widgets.py:1972
+#: matenu/src/lib/matenu/Menu_Widgets.py:2242
+msgid "Return to last menu"
+msgstr "Återgå till förra menyn"
+
+#: matenu/src/lib/matenu/Popup_Menu.py:72
+msgid "XML-Error: %s"
+msgstr "XML-fel: %s"
+
+#: matenu/src/lib/matenu/Popup_Menu.py:201
+msgid "Error while creating image from file: %s"
+msgstr "Fel när bild skulle skapas från fil: %s"
+
+#: matenu/src/lib/matenu/Popup_Menu.py:217
+msgid "Error: file %s not found."
+msgstr "Fel: fil %s hittade ej"
+
+#: matenu/src/lib/matenu/Popup_Menu.py:271
+msgid "Exception: %s"
+msgstr "Undantag: %s"
+
+#: matenu/src/lib/matenu/Popup_Menu.py:272
+msgid "An error occured with desktop-file: %s"
+msgstr "Ett fel uppstod med skrivbordsfilen: %s"

@@ -1,0 +1,759 @@
+# Finnish translation for matenu
+# Copyright (c) 2009 Rosetta Contributors and Canonical Ltd 2009
+# This file is distributed under the same license as the matenu package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2009.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: matenu\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2010-06-16 22:37+0000\n"
+"PO-Revision-Date: 2010-06-19 10:50+0000\n"
+"Last-Translator: Jiri Grönroos <Unknown>\n"
+"Language-Team: Finnish <fi@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2010-07-07 17:36+0000\n"
+"X-Generator: Launchpad (build Unknown)\n"
+
+#: matenu/src/lib/matenu/Globals.py:73
+msgid ""
+"MateNu detected a malicious script in this theme.\n"
+"The script was blocked!\n"
+"You should uninstall the selected theme and contact the website where you "
+"got it.\n"
+"\n"
+"The script that tried to run was:"
+msgstr ""
+"MateNu havaitsi pahaa tekevän komentosarjan tässä teemassa.\n"
+"Komentosarja estettiin.\n"
+"Poista teema ja ota yhteyttä internet-sivuun, josta sait kyseisen teeman.\n"
+"\n"
+"Komentosarja joka havaittiin oli:"
+
+#: matenu/src/lib/matenu/Globals.py:565
+msgid "All Applications"
+msgstr "Kaikki sovellukset"
+
+#: matenu/src/lib/matenu/Globals.py:565
+msgid "All Programs"
+msgstr "Kaikki ohjelmat"
+
+#: matenu/src/lib/matenu/Globals.py:565
+msgid "Applications"
+msgstr "Sovellukset"
+
+#: matenu/src/lib/matenu/Globals.py:565
+msgid "Connect"
+msgstr "Yhdistä"
+
+#: matenu/src/lib/matenu/Globals.py:565
+msgid "Connect To"
+msgstr "Yhdistä kohteeseen"
+
+#: matenu/src/lib/matenu/Globals.py:565
+msgid "Connect To Server"
+msgstr "Yhdistä palvelimeen"
+
+#: matenu/src/lib/matenu/Globals.py:565
+msgid "Connect to Server"
+msgstr "Yhdistä palvelimeen"
+
+#: matenu/src/lib/matenu/Globals.py:565
+msgid "Control Center"
+msgstr "Hallintakeskus"
+
+#: matenu/src/lib/matenu/Globals.py:565
+msgid "Distro"
+msgstr "Linux-jakelu"
+
+#: matenu/src/lib/matenu/Globals.py:565
+msgid "Documents"
+msgstr "Asiakirjat"
+
+#: matenu/src/lib/matenu/Globals.py:565
+msgid "Execute Application"
+msgstr "Käynnistä sovellus"
+
+#: matenu/src/lib/matenu/Globals.py:565
+msgid "Favorites"
+msgstr "Suosikit"
+
+#: matenu/src/lib/matenu/Globals.py:565
+msgid "Games"
+msgstr "Pelit"
+
+#: matenu/src/lib/matenu/Globals.py:565
+msgid "Hdd"
+msgstr "Kiintolevy"
+
+#: matenu/src/lib/matenu/Globals.py:565
+msgid "Help And Support"
+msgstr "Apu ja tuki"
+
+#: matenu/src/lib/matenu/Globals.py:565
+msgid "Help Center"
+msgstr "Ohjeet ja tuki"
+
+#: matenu/src/lib/matenu/Globals.py:565
+msgid "History"
+msgstr "Historia"
+
+#: matenu/src/lib/matenu/Globals.py:565
+msgid "Home"
+msgstr "Koti"
+
+#: matenu/src/lib/matenu/Globals.py:565
+msgid "Install Software"
+msgstr "Asenna sovelluksia"
+
+#: matenu/src/lib/matenu/Globals.py:565
+msgid "Leave"
+msgstr "Poistu"
+
+#: matenu/src/lib/matenu/Globals.py:565
+msgid "Lock"
+msgstr "Lukitse"
+
+#: matenu/src/lib/matenu/Globals.py:565
+msgid "Lock Computer"
+msgstr "Lukitse tietokone"
+
+#: matenu/src/lib/matenu/Globals.py:565
+msgid "Log Out"
+msgstr "Kirjaudu ulos"
+
+#: matenu/src/lib/matenu/Globals.py:565
+msgid "Menu"
+msgstr "Valikko"
+
+#: matenu/src/lib/matenu/Globals.py:565
+msgid "Music"
+msgstr "Musiikki"
+
+#: matenu/src/lib/matenu/Globals.py:565
+msgid "My Computer"
+msgstr "Oma tietokone"
+
+#: matenu/src/lib/matenu/Globals.py:565
+msgid "Personal Folder"
+msgstr "Henkilökohtainen kansio"
+
+#: matenu/src/lib/matenu/Globals.py:565
+msgid "Pictures"
+msgstr "Kuvat"
+
+#: matenu/src/lib/matenu/Globals.py:565
+msgid "Power"
+msgstr "Virta"
+
+#: matenu/src/lib/matenu/Globals.py:565
+msgid "Programs"
+msgstr "Ohjelmat"
+
+#: matenu/src/lib/matenu/Globals.py:565
+msgid "Recent"
+msgstr "Viimeisimmät"
+
+#: matenu/src/lib/matenu/Globals.py:565
+msgid "Recent Applications"
+msgstr "Viimeksi avatut sovellukset"
+
+#: matenu/src/lib/matenu/Globals.py:565
+msgid "Recent Documents"
+msgstr "Viimeksi avatut asiakirjat"
+
+#: matenu/src/lib/matenu/Globals.py:565
+msgid "Recent Items"
+msgstr "Viimeisimmät kirjaukset"
+
+#: matenu/src/lib/matenu/Globals.py:565
+msgid "Run Application"
+msgstr "Suorita sovellus"
+
+#: matenu/src/lib/matenu/Globals.py:565
+msgid "Search for Files"
+msgstr "Etsi tiedostoja"
+
+#: matenu/src/lib/matenu/Globals.py:565
+msgid "Show History"
+msgstr "Näytä historia"
+
+#: matenu/src/lib/matenu/Globals.py:565
+msgid "Shut Down"
+msgstr "Sammuta"
+
+#: matenu/src/lib/matenu/Globals.py:565
+msgid "Shut Down..."
+msgstr "Sammuta..."
+
+#: matenu/src/lib/matenu/Globals.py:565
+msgid "Shutdown Computer"
+msgstr "Sammuta tietokone"
+
+#: matenu/src/lib/matenu/Globals.py:565
+msgid "Start"
+msgstr "Käynnistä"
+
+#: matenu/src/lib/matenu/Globals.py:565
+msgid "Status"
+msgstr "Tila"
+
+#: matenu/src/lib/matenu/Globals.py:565
+msgid "Used"
+msgstr "Käytetyt"
+
+#: matenu/src/lib/matenu/Globals.py:565
+msgid "User"
+msgstr "Käyttäjä"
+
+#: matenu/src/lib/matenu/Globals.py:565
+msgid "Videos"
+msgstr "Videot"
+
+#: matenu/src/lib/matenu/Globals.py:565
+msgid "Web Bookmarks"
+msgstr "WWW-kirjanmerkit"
+
+#: matenu/src/lib/matenu/Globals.py:565
+msgid "Web Sites"
+msgstr "Verkkosivustot"
+
+#: matenu/src/lib/matenu/Globals.py:565
+#: matenu/src/lib/matenu/MateNu-Settings.py:342
+#: matenu/src/lib/matenu/Menu_Widgets.py:1078
+#: matenu/src/lib/matenu/Menu_Widgets.py:1089
+#: matenu/src/lib/matenu/Menu_Widgets.py:1118
+#: matenu/src/lib/matenu/Menu_Widgets.py:1149
+#: matenu/src/lib/matenu/Menu_Widgets.py:1334
+#: matenu/src/lib/matenu/Menu_Widgets.py:1338
+msgid "Search"
+msgstr "Haku"
+
+#: matenu/src/lib/matenu/Globals.py:565
+#: matenu/src/lib/matenu/MateNu-Settings.py:362
+msgid "Control Panel"
+msgstr "Ohjauspaneeli"
+
+#: matenu/src/lib/matenu/Globals.py:565
+#: matenu/src/lib/matenu/MateNu-Settings.py:372
+msgid "Package Manager"
+msgstr "Paketinhallinta"
+
+#: matenu/src/lib/matenu/Globals.py:565
+#: matenu/src/lib/matenu/MateNu-Settings.py:382
+msgid "Help"
+msgstr "Ohje"
+
+#: matenu/src/lib/matenu/Globals.py:565
+#: matenu/src/lib/matenu/MateNu-Settings.py:402
+#: matenu/src/lib/matenu/Menu_Items.py:303
+msgid "Lock Screen"
+msgstr "Lukitse näyttö"
+
+#: matenu/src/lib/matenu/Globals.py:565
+#: matenu/src/lib/matenu/MateNu-Settings.py:412
+#: matenu/src/lib/matenu/Menu_Items.py:302
+msgid "Logout"
+msgstr "Kirjaudu ulos"
+
+#: matenu/src/lib/matenu/Globals.py:565
+#: matenu/src/lib/matenu/MateNu-Settings.py:443
+#: matenu/src/lib/matenu/Menu_Items.py:300
+msgid "Suspend"
+msgstr "Keskeytystila"
+
+#: matenu/src/lib/matenu/Globals.py:565
+#: matenu/src/lib/matenu/MateNu-Settings.py:453
+#: matenu/src/lib/matenu/Menu_Items.py:301
+msgid "Hibernate"
+msgstr "Lepotila"
+
+#: matenu/src/lib/matenu/Globals.py:565
+#: matenu/src/lib/matenu/MateNu-Settings.py:464
+msgid "Run"
+msgstr "Suorita"
+
+#: matenu/src/lib/matenu/Globals.py:565
+#: matenu/src/lib/matenu/MateNu-Settings.py:474
+#: matenu/src/lib/matenu/Menu_Items.py:298
+msgid "Shutdown"
+msgstr "Sammuta"
+
+#: matenu/src/lib/matenu/Globals.py:565
+#: matenu/src/lib/matenu/Menu_Items.py:256
+#: matenu/src/lib/matenu/Menu_Widgets.py:549
+#: matenu/src/lib/matenu/Menu_Widgets.py:721
+#: matenu/src/lib/matenu/Menu_Widgets.py:893
+msgid "About Me"
+msgstr "Tietoja minusta"
+
+#: matenu/src/lib/matenu/Globals.py:565
+#: matenu/src/lib/matenu/Menu_Items.py:383
+msgid "Home Folder"
+msgstr "Kotihakemisto"
+
+#: matenu/src/lib/matenu/Globals.py:565
+#: matenu/src/lib/matenu/Menu_Items.py:384
+msgid "Computer"
+msgstr "Tietokone"
+
+#: matenu/src/lib/matenu/Globals.py:565
+#: matenu/src/lib/matenu/Menu_Items.py:385
+msgid "Network"
+msgstr "Verkko"
+
+#: matenu/src/lib/matenu/Globals.py:565
+#: matenu/src/lib/matenu/Menu_Items.py:489
+#: matenu/src/lib/matenu/Menu_Items.py:524
+msgid "System"
+msgstr "Järjestelmä"
+
+#: matenu/src/lib/matenu/Globals.py:565
+#: matenu/src/lib/matenu/Menu_Items.py:556
+msgid "Most Used"
+msgstr "Käytetyimmät"
+
+#: matenu/src/lib/matenu/Globals.py:565
+#: matenu/src/lib/matenu/Menu_Items.py:556
+msgid "Recently Used"
+msgstr "Viimeksi käytetyt"
+
+#: matenu/src/lib/matenu/MateNu-Settings.py:61
+msgid "MateNu Settings"
+msgstr "MateNun asetukset"
+
+#: matenu/src/lib/matenu/MateNu-Settings.py:83
+msgid "Ok"
+msgstr "OK"
+
+#: matenu/src/lib/matenu/MateNu-Settings.py:85
+msgid "Apply"
+msgstr "Hyväksy"
+
+#: matenu/src/lib/matenu/MateNu-Settings.py:87
+msgid "Cancel"
+msgstr "Peruuta"
+
+#: matenu/src/lib/matenu/MateNu-Settings.py:92
+msgid "Themes"
+msgstr "Teemat"
+
+#: matenu/src/lib/matenu/MateNu-Settings.py:93
+#: matenu/src/lib/matenu/MateNuTray.py:42
+msgid "Preferences"
+msgstr "Asetukset"
+
+#: matenu/src/lib/matenu/MateNu-Settings.py:94
+#: matenu/src/lib/matenu/MateNuTray.py:43
+msgid "About"
+msgstr "Tietoja"
+
+#: matenu/src/lib/matenu/MateNu-Settings.py:95
+msgid "Commands"
+msgstr "Komennot"
+
+#: matenu/src/lib/matenu/MateNu-Settings.py:114
+msgid "Menu Selection"
+msgstr "Valikon asetukset"
+
+#: matenu/src/lib/matenu/MateNu-Settings.py:137
+#: matenu/src/lib/matenu/MateNu-Settings.py:165
+#: matenu/src/lib/matenu/MateNu-Settings.py:195
+#: matenu/src/lib/matenu/MateNu-Settings.py:216
+msgid "Install"
+msgstr "Asenna"
+
+#: matenu/src/lib/matenu/MateNu-Settings.py:139
+#: matenu/src/lib/matenu/MateNu-Settings.py:167
+#: matenu/src/lib/matenu/MateNu-Settings.py:197
+#: matenu/src/lib/matenu/MateNu-Settings.py:218
+#: matenu/src/lib/matenu/MateNu-Settings.py:771
+msgid "Uninstall"
+msgstr "Poista asennettu ohjelma"
+
+#: matenu/src/lib/matenu/MateNu-Settings.py:151
+msgid "Button Selection"
+msgstr "Napin valinta"
+
+#: matenu/src/lib/matenu/MateNu-Settings.py:181
+msgid "Icon Selection"
+msgstr "Kuvakkeiden valinta"
+
+#: matenu/src/lib/matenu/MateNu-Settings.py:213
+msgid "Sound theme"
+msgstr "Ääniteema"
+
+#: matenu/src/lib/matenu/MateNu-Settings.py:235
+msgid "Bind keyboad key"
+msgstr "Aseta näppäin"
+
+#: matenu/src/lib/matenu/MateNu-Settings.py:242
+msgid "Show Internet and Email Buttons"
+msgstr "Näytä internet- ja sähköposti-painikkeet"
+
+#: matenu/src/lib/matenu/MateNu-Settings.py:244
+msgid "Use Gtk Theme Colors in Program List"
+msgstr "Käytä GTK-teeman värejä ohjelmalistassa"
+
+#: matenu/src/lib/matenu/MateNu-Settings.py:246
+msgid "Tab Selection on Mouse Hover"
+msgstr "Välilehden valinta hiiren kohdistuksella"
+
+#: matenu/src/lib/matenu/MateNu-Settings.py:253
+msgid "Icon Size in Program List"
+msgstr "Kuvakkeiden koko Ohjelma-listassa"
+
+#: matenu/src/lib/matenu/MateNu-Settings.py:255
+msgid "Number of Items in Recent Items List"
+msgstr "Viimeisten kirjausten määrä"
+
+#: matenu/src/lib/matenu/MateNu-Settings.py:269
+msgid "Listview"
+msgstr "Listanäkymä"
+
+#: matenu/src/lib/matenu/MateNu-Settings.py:270
+msgid "Buttons (expanded)"
+msgstr "Painikkeet (laajennettu)"
+
+#: matenu/src/lib/matenu/MateNu-Settings.py:271
+msgid "Buttons (fixed)"
+msgstr "Painikkeet (kiinnitetty)"
+
+#: matenu/src/lib/matenu/MateNu-Settings.py:272
+msgid "Iconview (fastest)"
+msgstr "Kuvakenäkymä (nopein)"
+
+#: matenu/src/lib/matenu/MateNu-Settings.py:273
+msgid "Cairo (experimental)"
+msgstr "Cairo (kokeellinen)"
+
+#: matenu/src/lib/matenu/MateNu-Settings.py:276
+msgid "Tab hover effect"
+msgstr "Välilehtien kohdistustehoste"
+
+#: matenu/src/lib/matenu/MateNu-Settings.py:278
+msgid "None"
+msgstr "Ei yhtään"
+
+#: matenu/src/lib/matenu/MateNu-Settings.py:279
+msgid "Grow"
+msgstr "Laajenna"
+
+#: matenu/src/lib/matenu/MateNu-Settings.py:280
+msgid "Black and White"
+msgstr "Mustavalkoinen"
+
+#: matenu/src/lib/matenu/MateNu-Settings.py:281
+msgid "Blur"
+msgstr "Sumenna"
+
+#: matenu/src/lib/matenu/MateNu-Settings.py:282
+msgid "Glow"
+msgstr "Hehku"
+
+#: matenu/src/lib/matenu/MateNu-Settings.py:283
+msgid "Saturate"
+msgstr "Kylläisyys"
+
+#: matenu/src/lib/matenu/MateNu-Settings.py:286
+msgid "Program list type"
+msgstr "Ohjelma-listan tyyppi"
+
+#: matenu/src/lib/matenu/MateNu-Settings.py:287
+msgid "Use system icons instead of theme icons"
+msgstr "Käytä järjestelmän kuvakkeita teeman kuvakkeiden sijaan"
+
+#: matenu/src/lib/matenu/MateNu-Settings.py:289
+msgid "Use distributor logo instead of button theme"
+msgstr "Käytä jakelun logoa kuvaketeeman sijaan"
+
+#: matenu/src/lib/matenu/MateNu-Settings.py:291
+msgid "Show thumbnails in recent items when available"
+msgstr "Näytä pikkukuvakeet viimeisimmistä kohteista kun mahdollista"
+
+#: matenu/src/lib/matenu/MateNu-Settings.py:293
+msgid "Show tooltips in program list"
+msgstr "Näytä työkaluvihjeet ohjelmalistalla"
+
+#: matenu/src/lib/matenu/MateNu-Settings.py:296
+msgid "Activate Compiz blur effect on MateNu window"
+msgstr "Käytä Compizin sumennustehostetta MateNun ikkunassa"
+
+#: matenu/src/lib/matenu/MateNu-Settings.py:303
+msgid "Disable Places and System in program list"
+msgstr "Poista kohdat \"Sijainnit\" ja \"Järjestelmä\" ohjelmaluettelosta"
+
+#: matenu/src/lib/matenu/MateNu-Settings.py:352
+msgid "Network Config"
+msgstr "Verkon asetukset"
+
+#: matenu/src/lib/matenu/MateNu-Settings.py:392
+msgid "Shutdown Dialog"
+msgstr "Sammuttamisen sanoma"
+
+#: matenu/src/lib/matenu/MateNu-Settings.py:422
+msgid "Logout Dialog"
+msgstr "Uloskirjautumisen sanoma"
+
+#: matenu/src/lib/matenu/MateNu-Settings.py:432
+msgid "Restart"
+msgstr "Käynnistä uudelleen"
+
+#: matenu/src/lib/matenu/MateNu-Settings.py:484
+msgid "User about"
+msgstr "Tietoa käyttäjästä"
+
+#: matenu/src/lib/matenu/MateNu-Settings.py:494
+#: matenu/src/lib/matenu/Mate_Me.py:127
+#: matenu/src/lib/matenu/Menu_Items.py:575
+msgid "Open as Administrator"
+msgstr "Käynnistä pääkäyttäjänä"
+
+#: matenu/src/lib/matenu/MateNu-Settings.py:504
+msgid "Menu Editor"
+msgstr "Muokkaa valikoita"
+
+#: matenu/src/lib/matenu/MateNu-Settings.py:544
+msgid "Donate"
+msgstr "Tee lahjoitus"
+
+#: matenu/src/lib/matenu/MateNu-Settings.py:547
+msgid "Download More Themes"
+msgstr "Lataa lisää teemoja"
+
+#: matenu/src/lib/matenu/MateNu-Settings.py:550
+msgid "MateNu Themes Specifications"
+msgstr "MateNun teemojen määrittely"
+
+#: matenu/src/lib/matenu/MateNu-Settings.py:553
+msgid "Report Bug"
+msgstr "Tee virheraportti"
+
+#: matenu/src/lib/matenu/MateNu-Settings.py:556
+msgid "Help Translate"
+msgstr "Auta kääntämään"
+
+#: matenu/src/lib/matenu/MateNu-Settings.py:559
+msgid "Visit Homepage"
+msgstr "Vieraile kotisivulla"
+
+#: matenu/src/lib/matenu/MateNu-Settings.py:562
+msgid "Credits"
+msgstr "Tekijät"
+
+#: matenu/src/lib/matenu/MateNu-Settings.py:580
+#: matenu/src/lib/matenu/MateNu.py:149
+#: matenu/src/lib/matenu/MateNu.py:228
+#: matenu/src/lib/matenu/MateNu_rewrite.py:238
+#: matenu/src/lib/matenu/MateNu_rewrite.py:313
+msgid "Menu needs to restart , restart now?"
+msgstr "Valikko täytyy käynnistää uudelleen, käynnistetäänkö nyt?"
+
+#: matenu/src/lib/matenu/MateNu-Settings.py:771
+msgid "theme"
+msgstr "teema"
+
+#: matenu/src/lib/matenu/MateNu-Settings.py:788
+msgid "Install a new theme"
+msgstr "Asenna uusi teema"
+
+#: matenu/src/lib/matenu/MateNu-Settings.py:812
+msgid "Error - Theme package is corrupt!"
+msgstr "Virhe - Teematiedosto on korruptoitunut!"
+
+#: matenu/src/lib/matenu/MateNu-Settings.py:833
+#: matenu/src/lib/matenu/MateNu-Settings.py:842
+#: matenu/src/lib/matenu/MateNu-Settings.py:849
+#: matenu/src/lib/matenu/MateNu-Settings.py:865
+msgid ""
+"Error - theme not installed\n"
+"Maybe the Theme was packaged incorrectly\n"
+"Try to install the Theme manually"
+msgstr ""
+"Virhe - teemaa ei asennettu!\n"
+"Teeman paketti saattoi olla vääränlainen.\n"
+"Yritä asentaa teema manuaalisesti."
+
+#: matenu/src/lib/matenu/MateNu-Settings.py:855
+msgid "Theme exists. Continue?"
+msgstr "Teema on jo asennettu. Jatketaanko?"
+
+#: matenu/src/lib/matenu/MateNu-Settings.py:863
+msgid "Theme installed"
+msgstr "Teema on asennettu onnistuneesti"
+
+#: matenu/src/lib/matenu/MateNu-Settings.py:874
+#: matenu/src/lib/matenu/MateNu-Settings.py:893
+msgid ""
+"This theme was created for a previous version of MateNu.\n"
+"The theme was automaticly updated in order to work properly."
+msgstr ""
+"Tämä teema on luotu Matenun edelliselle versiolle, eikä se ehkä toimi "
+"nykyisellä versiolla.\n"
+"Teema päivitettiin automaattisesti, jotta se toimisi oikein."
+
+#: matenu/src/lib/matenu/MateNuTray.py:44
+msgid "Edit Menus"
+msgstr "Muokkaa valikkoja"
+
+#: matenu/src/lib/matenu/MateNuTray.py:45
+msgid "Quit"
+msgstr "Lopeta"
+
+#: matenu/src/lib/matenu/Mate_Me.py:87
+#: matenu/src/lib/matenu/Menu_Items.py:667
+msgid "added to favorites list"
+msgstr "Lisättiin Suosikit-listaan"
+
+#: matenu/src/lib/matenu/Mate_Me.py:97
+#: matenu/src/lib/matenu/Menu_Items.py:678
+msgid "removed from favorites list"
+msgstr "Poistettiin Suosikit-listasta"
+
+#: matenu/src/lib/matenu/Mate_Me.py:105
+#: matenu/src/lib/matenu/Menu_Items.py:686
+msgid "added to system startup"
+msgstr "Lisättiin käynnistettäviin ohjelmiin"
+
+#: matenu/src/lib/matenu/Mate_Me.py:113
+#: matenu/src/lib/matenu/Menu_Items.py:694
+msgid "removed from system startup"
+msgstr "Poistettiin käynnistettävistä ohjelmista"
+
+#: matenu/src/lib/matenu/Mate_Me.py:131
+#: matenu/src/lib/matenu/Menu_Items.py:618
+msgid "Add to Favorites"
+msgstr "Lisää suosikkeihin"
+
+#: matenu/src/lib/matenu/Mate_Me.py:135
+#: matenu/src/lib/matenu/Menu_Items.py:621
+msgid "Remove from Favorites"
+msgstr "Poista suosikeista"
+
+#: matenu/src/lib/matenu/Mate_Me.py:138
+#: matenu/src/lib/matenu/Menu_Items.py:623
+msgid "Create Desktop Shortcut"
+msgstr "Luo työpöydälle pikakuvake"
+
+#: matenu/src/lib/matenu/Mate_Me.py:142
+#: matenu/src/lib/matenu/Menu_Items.py:626
+msgid "Remove from System Startup"
+msgstr "Poista käynnistettävistä ohjelmista"
+
+#: matenu/src/lib/matenu/Mate_Me.py:144
+#: matenu/src/lib/matenu/Menu_Items.py:628
+msgid "Add to System Startup"
+msgstr "Lisää käynnistettäviin ohjelmiin"
+
+#: matenu/src/lib/matenu/Menu_Items.py:257
+msgid "Appearance"
+msgstr "Ulkoasu"
+
+#: matenu/src/lib/matenu/Menu_Items.py:258
+msgid "Menu editor"
+msgstr "Valikkojen muokkaus"
+
+#: matenu/src/lib/matenu/Menu_Items.py:259
+msgid "Screensaver"
+msgstr "Näytönsäästäjä"
+
+#: matenu/src/lib/matenu/Menu_Items.py:260
+msgid "System Monitor"
+msgstr "Järjestelmän valvonta"
+
+#: matenu/src/lib/matenu/Menu_Items.py:261
+msgid "MateNu settings utility"
+msgstr "Matenun asetustyökalu"
+
+#: matenu/src/lib/matenu/Menu_Items.py:281
+msgid ""
+"No favorites\n"
+"Use the mouse right button\n"
+"to add or remove favorites"
+msgstr ""
+"Ei suosikkeja\n"
+"Käytä hiiren oikeaa nappia\n"
+"lisätäksesi tai poistaaksesi suosikkeja"
+
+#: matenu/src/lib/matenu/Menu_Items.py:299
+msgid "Reboot"
+msgstr "Käynnistä uudelleen"
+
+#: matenu/src/lib/matenu/Menu_Items.py:326
+msgid "Clear recent documents"
+msgstr "Tyhjennä viimeksi käytettyjen tiedostojen luettelo"
+
+#: matenu/src/lib/matenu/Menu_Items.py:364
+msgid "File System"
+msgstr "Järjestelmä"
+
+#: matenu/src/lib/matenu/Menu_Items.py:386
+#: matenu/src/lib/matenu/Menu_Items.py:613
+msgid "Trash"
+msgstr "Roskakori"
+
+#: matenu/src/lib/matenu/Menu_Items.py:434
+msgid "No items matched your search criteria"
+msgstr "Hakuehtoihisi sopivia kohteita ei löytynyt"
+
+#: matenu/src/lib/matenu/Menu_Items.py:438
+msgid "Found %s results to your search"
+msgstr "Löydettiin % tulosta, jotka vastaavat hakuasi"
+
+#: matenu/src/lib/matenu/Menu_Items.py:475
+msgid "Browse Internet"
+msgstr "Selaa Internetiä"
+
+#: matenu/src/lib/matenu/Menu_Items.py:476
+msgid "E-mail"
+msgstr "Sähköposti"
+
+#: matenu/src/lib/matenu/Menu_Items.py:481
+#: matenu/src/lib/matenu/Menu_Items.py:516
+#: matenu/src/lib/matenu/Menu_Items.py:572
+#: matenu/src/lib/matenu/Menu_Widgets.py:1588
+#: matenu/src/lib/matenu/Menu_Widgets.py:1962
+#: matenu/src/lib/matenu/Menu_Widgets.py:2241
+msgid "Back"
+msgstr "Takaisin"
+
+#: matenu/src/lib/matenu/Menu_Items.py:485
+#: matenu/src/lib/matenu/Menu_Items.py:527
+msgid "Places"
+msgstr "Sijainnit"
+
+#: matenu/src/lib/matenu/Menu_Items.py:602
+msgid "Open with"
+msgstr "Avaa sovelluksella"
+
+#: matenu/src/lib/matenu/Menu_Items.py:615
+msgid "Empty Trash"
+msgstr "Tyhjennä roskakori"
+
+#: matenu/src/lib/matenu/Menu_Widgets.py:1598
+#: matenu/src/lib/matenu/Menu_Widgets.py:1972
+#: matenu/src/lib/matenu/Menu_Widgets.py:2242
+msgid "Return to last menu"
+msgstr "Takaisin edelliseen valikkoon"
+
+#: matenu/src/lib/matenu/Popup_Menu.py:72
+msgid "XML-Error: %s"
+msgstr "XML-Virhe: %"
+
+#: matenu/src/lib/matenu/Popup_Menu.py:201
+msgid "Error while creating image from file: %s"
+msgstr "Virhe tapahtui luodessa kuvaa tiedostosta: %"
+
+#: matenu/src/lib/matenu/Popup_Menu.py:217
+msgid "Error: file %s not found."
+msgstr "Virhe: tiedostoa %s ei löytynyt"
+
+#: matenu/src/lib/matenu/Popup_Menu.py:271
+msgid "Exception: %s"
+msgstr "Odotettiin %"
+
+#: matenu/src/lib/matenu/Popup_Menu.py:272
+msgid "An error occured with desktop-file: %s"
+msgstr "Virhe tapahtui työpöytä-tiedostosta: %"
