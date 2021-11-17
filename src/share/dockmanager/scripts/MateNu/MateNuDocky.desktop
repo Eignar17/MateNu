@@ -1,0 +1,10 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Name=MateNuDocky
+Exec=/usr/share/dockmanager/scripts/MateNu/MateNuDocky.py
+Type=Application
+StartupNotify=true
+Comment=MateNu consolidated menu for Mate
+Icon=distributor-logo
+X-MATE-Autostart-enabled=true
