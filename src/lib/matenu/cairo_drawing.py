@@ -96,7 +96,7 @@ def draw_image_gtk(ctx,x,y, pix,w,h,bgcolor,colorpb=None,flip=True):
 			pixbuf.composite(colorpb, 0, 0, w, h, 0,0, 1, 1, gtk.gdk.INTERP_BILINEAR, 70)
 
 		pixbuf = colorpb
-	else:print 'Error - Gtk colors required Numpy installed'
+	else:print ('Error - Gtk colors required Numpy installed')
 	if Globals.flip != None and flip is True:
 		pixbuf = pixbuf.flip(Globals.flip)
 	image = ctx.set_source_pixbuf(pixbuf, 0, 0)
