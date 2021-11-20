@@ -44,7 +44,7 @@ def show_warning (message, title='MateNu'):
 	md = gtk.MessageDialog(None, type=gtk.MESSAGE_WARNING, 
 			buttons=gtk.BUTTONS_OK)
 	md.set_title(title)
-	print message
+	print (message)
 	md.set_markup(str(message))
 	md.run()
 	md.destroy()
@@ -166,7 +166,7 @@ class Notifier(object):
 					[], {}, timeout)
 				return True
 			else:
-				print "Notify: No DBus running or notifications-daemon unavailable."
+				print ("Notify: No DBus running or notifications-daemon unavailable.")
 			return False
 		except:pass
 
