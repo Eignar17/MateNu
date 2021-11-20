@@ -1,4 +1,3 @@
-#!/usr/bin/env python
 
 # This application is released under the GNU General Public License 
 # v3 (or, at your option, any later version). You can find the full 
@@ -32,14 +31,14 @@ if len(sys.argv) == 2:
 		os.system('python -u ' + INSTALL_PREFIX + '/lib/matenu/MateNu.py ' + after)
 
 if len(sys.argv) != 2 or sys.argv[1] == '--help':
-	print "\nUsage: MateNu.py [Command] \n"
-	print "Command:\tWhat it does:\n"
+	print ("\nUsage: MateNu.py [Command] \n")
+	print ("Command:\tWhat it does:\n")
 
-	print "run-in-window\truns independant of mate-panel"
-	print "run-in-tray\truns in system tray"
-	print "settings\topens settings window"
-	print "debug\t\truns in debug mode in mate-panel"
-	print "--help\t\tdisplay this help text"
+	print ("run-in-window\truns independant of mate-panel")
+	print ("run-in-tray\truns in system tray")
+	print ("settings\topens settings window")
+	print ("debug\t\truns in debug mode in mate-panel")
+	print ("--help\t\tdisplay this help text")
 
 
 
