@@ -71,7 +71,7 @@ class GlobalKeyBinding (gobject.GObject, threading.Thread):
         if not accelerator or (not keyval and not modifiers):
             self.keycode = None
             self.modifiers = None
-	    print 'Unable to bind the selected key'
+	    print ('Unable to bind the selected key')
             return
         self.keycode = self.keymap.get_entries_for_keyval(keyval)[0][0]
         self.modifiers = int (modifiers)
