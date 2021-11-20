@@ -159,8 +159,8 @@ class OperaBookmarksParser (BrowserSupport):
 	def __init__ (self):
 		self.root = None
 		#for x in get_bookmarks(fpath):
-		#	print x['title'],x['uri'],x['type'],'text/x-moz-place'
-		#print "Parsed # bookmarks:", list(get_bookmarks(fpath))
+		#	print (x['title'],x['uri'],x['type'],'text/x-moz-place')
+		#print ("Parsed # bookmarks:", list(get_bookmarks(fpath))
 		self._opera_home = os.path.expanduser("~/.opera/")
 		self._bookmarks_path = os.path.join(self._opera_home, BOOKMARKS_FILE)
 
@@ -257,8 +257,8 @@ class ChromiumBookmarksParser (BrowserSupport):
 	def __init__ (self):
 		self.root = None
 		#for x in get_bookmarks(fpath):
-		#	print x['title'],x['uri'],x['type'],'text/x-moz-place'
-		#print "Parsed # bookmarks:", list(get_bookmarks(fpath))
+		#	print (x['title'],x['uri'],x['type'],'text/x-moz-place')
+		#print ("Parsed # bookmarks:", list(get_bookmarks(fpath))
 
 
 	def isBrowser (self, browser):
@@ -346,7 +346,7 @@ def get_firefox_bookmarks(bookmarks_file):
 			content = content[:-6] + u"[]}]}"
 		try:
 			root = json_decoder(content)
-		except:print 'json error while reading firefox bookmarks...'
+		except:print ('json error while reading firefox bookmarks...')
 
 	# make a dictionary of unique bookmarks
 	bmap = {}
@@ -359,7 +359,7 @@ def get_firefox_bookmarks(bookmarks_file):
 		if not "tags" in bmap[id_]:
 			bmap[id_]["tags"] = []
 		else:
-			print "Already in, gets tag:", tag
+			print ("Already in, gets tag:", tag)
 		bmap[id_]["tags"].append(tag)
 
 	MOZ_CONTAINER = "text/x-moz-place-container"
@@ -409,8 +409,8 @@ class Firefox3FormatBookmarksParser (BrowserSupport):
 	def __init__ (self):
 		self.root = None
 		#for x in get_bookmarks(fpath):
-		#	print x['title'],x['uri'],x['type'],'text/x-moz-place'
-		#print "Parsed # bookmarks:", list(get_bookmarks(fpath))
+		#	print (x['title'],x['uri'],x['type'],'text/x-moz-place')
+		#print ("Parsed # bookmarks:", list(get_bookmarks(fpath))
 
 
 	def isBrowser (self, browser):
