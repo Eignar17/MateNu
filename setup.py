@@ -1,4 +1,3 @@
-#!/usr/bin/python
 #
 # This application is released under the GNU General Public License 
 # v3 (or, at your option, any later version). You can find the full 
@@ -27,11 +26,11 @@ a = open('src/lib/matecomponent/MATE_MateNu.server','w')
 a.write(r)
 a.close()
 
-print 'Preparing to install translation'
+print ('Preparing to install translation')
 podir = os.path.join (os.path.realpath ("."), "po")
 print podir
 if os.path.isdir (podir):
-	print 'installing translations'
+	print ('installing translations')
 	buildcmd = "msgfmt -o src/share/locale/%s/LC_MESSAGES/%s.mo po/%s.po"
 	
 	for name in os.listdir (podir):		
@@ -39,7 +38,7 @@ if os.path.isdir (podir):
 			dname = name.split('-')[1].split('.')[0]
 			name = name[:-3]
 			
-			print 'Creating language Binary for : ' + name
+			print ('Creating language Binary for : ' + name)
 			if not os.path.isdir ("src/share/locale/%s/LC_MESSAGES" % dname):
 				os.makedirs ("src/share/locale/%s/LC_MESSAGES" % dname)
 			os.system (buildcmd % (dname,name.replace('-'+dname,''), name))
