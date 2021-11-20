@@ -14,13 +14,13 @@
 import sys,os
 
 if len(sys.argv) < 2 or sys.argv[1] == "--help":
-	print "MateNu session manager HELP====================="
-	print "Command:		 What it does:\n"
-	print "shutdown		 Shutdown the PC"
-	print "reboot		 Reboot the PC"
-	print "hibernate	 Hibernate the PC"
-	print "suspend		 Suspend the PC"
-	print "================================================="
+	print ("MateNu session manager HELP=====================")
+	print ("Command:		 What it does:\n")
+	print ("shutdown		 Shutdown the PC")
+	print ("reboot		 Reboot the PC")
+	print ("hibernate	 Hibernate the PC")
+	print ("suspend		 Suspend the PC")
+	print ("=================================================")
 
 else:
 
@@ -33,28 +33,28 @@ else:
 	try:
 		devobj = bus.get_object('org.mate.PowerManagement', 'org/mate/PowerManagement')
 		power = dbus.Interface(devobj, "org/mate/PowerManagement")
-		print "using mate < 2.28"
+		print ("using mate < 2.28")
 	except:
 		try:
 			# patched version http://www.electric-spoon.com/doc/mate-session/dbus/mate-session.html#org.mate.SessionManager.RequestReboot
 			# normal version http://people.gnome.org/~mccann/mate-session/docs/mate-session.html
 			devobj = bus.get_object('org.mate.SessionManager', '/org/mate/SessionManager')
 			power2 = dbus.Interface(devobj, "org.mate.SessionManager")
-			print "using mate >= 2.28"
+			print ("using mate >= 2.28")
 		except:
 			devobj = bus.get_object('org.kde.ksmserver', '/KSMServer')
 			power4 = dbus.Interface(devobj, "org.kde.KSMServerInterface")	
-			print "using kde"
+			print ("using kde")
 		try:
 			#http://hal.freedesktop.org/docs/DeviceKit-power/Power.html
 			devobj2 = bus2.get_object('org.freedesktop.DeviceKit.Power', '/org/freedesktop/DeviceKit/Power')
 			power3 = dbus.Interface(devobj2, "org.freedesktop.DeviceKit.Power")
-			print "using Devicekit.Power"
+			print ("using Devicekit.Power")
 		except:
 			#http://upower.freedesktop.org/docs/UPower.html
 			devobj2 = bus2.get_object('org.freedesktop.UPower', '/org/freedesktop/UPower')
 			power3 = dbus.Interface(devobj2, "org.freedesktop.UPower")
-			print "using UPower"
+			print ("using UPower")
 
 
 
