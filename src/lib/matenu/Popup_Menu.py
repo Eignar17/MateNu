@@ -77,7 +77,7 @@ def create_menu_from_xml (node, callback, icon_size=22):
 	"""Create a gtk.Menu by an XML-Node"""
 	menu = gtk.Menu()
 	for node in node.childNodes:
-		#print node
+		#print (node)
 		type = node.nodeType
 		if type == Node.ELEMENT_NODE:
 			label = node.getAttribute("label")
@@ -154,16 +154,16 @@ def fill_menu_from_directory (dirname, menu, callback, filter='*',
 	TODO: use regular expressions"""
 	# create theme-list from theme-directory
 	lst = glob.glob(dirname + "/" + filter)
-	#print "Scanning: "+dirname + "/" + filter 
+	#print ("Scanning: "+dirname + "/" + filter)
 	lst.sort()
 	dlen = len(dirname) + 1
 	# check each entry in dir
 	for filename in lst:
-		#print "FILE: " + filename
+		#print ("FILE: " + filename)
 		fname = filename[dlen:]
 		# file allowed?
 		if skip.count(fname)<1:
-			#print "OK"
+			#print (OK")
 			# create label (replace unwanted strings)
 			l = len(search) 
 			if l>0 and l == len(replace):
@@ -171,7 +171,7 @@ def fill_menu_from_directory (dirname, menu, callback, filter='*',
 					fname = fname.replace(search[i], replace[i])
 			# create label (add prefix/suffix/replace)
 			id = id_prefix + fname + id_suffix
-			#print "NAME: "+fname
+			#print ("NAME: "+fname)
 			# create menuitem 
 			item = gtk.MenuItem(fname)
 			item.connect("activate", callback, id)
@@ -249,12 +249,12 @@ class ApplicationMenu:
 		"""read all desktop-files in a directory into the internal list
 		and sort them into the available categories"""
 		dirlst = glob.glob(path + '/*')
-		#print "Path: "+path
+		#print ("Path: "+path)
 		namelen = len(path)
 		for file in dirlst:
 			if file[-8:]=='.desktop':
 				fname = file[namelen:]
-				#print "file: "+fname
+				#print ("file: "+fname)
 				df = read_desktop_file(file)
 				name = ""
 				icon = ""
