@@ -17,11 +17,11 @@ try:
 	import mateconf
 	mateconf_client = mateconf.client_get_default()
 	BACKEND = 'mateconf'
-	print "mateconf backend"
+	print ("mateconf backend")
 except:
 	BACKEND = 'xml'
 	import xml.dom.minidom
-	print "xml backend"
+	print ("xml backend")
 
 HomeDirectory = os.path.expanduser("~")
 ConfigDirectory = HomeDirectory + '/.matenu'
@@ -91,7 +91,7 @@ def load_setting(name):
 	elif BACKEND == 'xml':
 		if os.path.isfile(ConfigDirectory + "/.MateNu-Settings.xml"):
 			XMLSettings = xml.dom.minidom.parse(ConfigDirectory + "/.MateNu-Settings.xml")
-			#print XMLSettings.getElementsByTagName('MateNu')[0].childNodes[0].localName
+			#print (XMLSettings.getElementsByTagName('MateNu')[0].childNodes[0].localName)
 			x = XMLSettings.getElementsByTagName('MateNu')[0].getElementsByTagName("settings")[0]
 			try:
 				x = x.attributes[name].value
@@ -106,7 +106,7 @@ def load_setting(name):
 						
 						x = str(x).replace(" u'","").replace("u'","").replace("[","").replace("]","").replace("'","").replace('&quot;','"')
 						a = x.split(',')
-						print a				
+						print (a)
 					else:
 						a = str(x)
 					
