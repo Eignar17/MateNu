@@ -149,5 +149,5 @@ class PanelTopWindow():
 		if self.icon:
 			return int(self.icon.get_height()*self.scale)
 		else:
-			print "!"
+			print ("!")
 			return 0
