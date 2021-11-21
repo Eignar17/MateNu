@@ -145,7 +145,7 @@ class MenuButton:
 						ico = filename
 					self.Pic = gtk.gdk.pixbuf_new_from_file_at_size(ico,self.ww,self.hh)
 			self.Icon.set_from_pixbuf(self.Pic)
-		except:print 'error on button seticon'  + filename
+		except:print ('error on button seticon'  + filename)
 				
 
 	def Setimage(self,imagefile):
@@ -349,7 +349,7 @@ class MenuTab:
 					glow.composite(bg, 0, 0, self.ww, self.hh, 0, 0, 1, 1, gtk.gdk.INTERP_BILINEAR, alpha)
 					self.Pic.composite(bg, 0, 0, self.ww, self.hh, 0, 0, 1, 1, gtk.gdk.INTERP_BILINEAR, 255)
 				        self.Pic = bg
-				else:print 'Error - This efect requires numpy installed'					
+				else:print ('Error - This efect requires numpy installed')				
 
 			elif Globals.Settings['Tab_Efect'] == 5:#saturate
 				self.Pic = gtk.gdk.pixbuf_new_from_file_at_size(ico,self.ww,self.hh)
@@ -414,8 +414,8 @@ class MenuTab:
 
 		self.Pic = gtk.gdk.pixbuf_new_from_file_at_size(ico,self.ww,self.hh)
 		self.Icon.set_from_pixbuf(self.Pic)
-		#except:print 'Menu Tab error in - ' + filename
-				
+		#except:print ('Menu Tab error in - ' + filename)
+
 
 	def Setimage(self,imagefile):
 		# The image is background when it's not displaying the overlay
@@ -473,7 +473,7 @@ class MenuTab:
 	            hexfrag = hex(getattr(color,col) / (16 * 16)).split("x")[1]
 	            if len(hexfrag) < 2: hexfrag = "0" + hexfrag
 	            hexstring += hexfrag
-	        #print 'returning hexstring: ',hexstring
+	        #print ('returning hexstring: ',hexstring)
 	        return ('#' + str(hexstring))
 
 class Separator:
@@ -525,7 +525,7 @@ class ImageFrame:
 		self.backimagearea = None
 		self.w = w
 		self.h = h
-		#print w,h,iw,ih,ix,iy
+		#print (w,h,iw,ih,ix,iy)
 		self.ix = ix
 		self.iy = iy
 		self.iw = iw
@@ -586,7 +586,7 @@ class ImageFrame:
 		cairo_drawing.draw_pixbuf(self.ctx,self.backimagearea)
 
 	def composite_changed(self,widget):
-		print self.frame_window.is_composited()
+		print (self.frame_window.is_composited())
 
 	def screen_changed(self,widget):
 		# Screen change event
@@ -685,10 +685,10 @@ class ImageFrame:
 			try:
 				self.temp = gtk.gdk.pixbuf_new_from_file_at_size(imagefile, self.w, self.h)
 			except:
-				print 'Warning: icon %s not found in matenu icons, trying system icons instead!' % imagefile
+				print ('Warning: icon %s not found in matenu icons, trying system icons instead!' % imagefile)
 				image = IconFactory.GetSystemIcon(imagefile.split('/').pop())
 				if not image:
-					print 'Warning: icon %s was not found in system icons either!' % imagefile
+					print ('Warning: icon %s was not found in system icons either!' % imagefile)
 					image = IconFactory.GetSystemIcon('gtk-missing-image')
 				
 				self.temp = gtk.gdk.pixbuf_new_from_file_at_size(image, self.w, self.h)
@@ -757,7 +757,7 @@ class ImageFrame_cairo_surface:#flickers
 			self.timer = gobject.timeout_add(speed,self.updatefade, termination_event, rate)
 	
 	def composite_changed(self,widget):
-		print self.frame_window.is_composited()
+		print (self.frame_window.is_composited())
 
 	def updatefade(self, termination_event, rate):
 
@@ -940,7 +940,7 @@ class ImageFrame_new:
 			self.timer = gobject.timeout_add(speed,self.updatefade, termination_event, rate)
 
 	def composite_changed(self,widget):
-		print self.frame_window.is_composited()
+		print (self.frame_window.is_composited())
 
 	def updatefade(self, termination_event, rate):
 
@@ -1510,7 +1510,7 @@ class TreeProgramList(gobject.GObject):
 		selection_data.set(selection_data.target, 8,uri_list)
 
 	def update_icons(self,client, connection_id=None, entry=None, args=None):
-		print 'icons changed'
+		print ('icons changed')
 		self.XDG.Icon_change()
 		self.Restart('previous')
 
@@ -1541,7 +1541,7 @@ class TreeProgramList(gobject.GObject):
 			self.ActivateButton(event)
 
 	def map_event(self, widget, event):
-		print 'map'
+		print ('map')
 		self.PopulateButtons()
 
 
@@ -1579,7 +1579,7 @@ class TreeProgramList(gobject.GObject):
 				self.AddBackButton(self.XDG.L_Names[i],self.XDG.L_Icons[i],i)
 			else:
 				self.AddButton(self.XDG.L_Names[i],self.XDG.L_Icons[i],i)
-		#print time.clock() 
+		#print (time.clock())
 		#self.SetInputFocus()
 		#gc.collect()
 		self.tree1.set_model(self.model)
@@ -1992,7 +1992,7 @@ class IconProgramList(gobject.GObject):
 		selection_data.set(selection_data.target, 8,uri_list)
 
 	def update_icons(self,client, connection_id=None, entry=None, args=None):
-		print 'icons changed'
+		print ('icons changed')
 		self.XDG.Icon_change()
 		self.Restart('previous')
 
@@ -2021,7 +2021,7 @@ class IconProgramList(gobject.GObject):
 			self.ActivateButton(event)
 
 	#def map_event(self, widget, event):
-	#	print 'map'
+	#	print ('map')
 	#	self.PopulateButtons()
 
 
@@ -2055,15 +2055,15 @@ class IconProgramList(gobject.GObject):
 				self.AddBackButton(self.XDG.L_Names[i],self.XDG.L_Icons[i],i)
 			else:
 				self.AddButton(self.XDG.L_Names[i],self.XDG.L_Icons[i],i)
-		#print time.clock()-a
+		#print (time.clock()-a)
 		#if a * Globals.PG_iconsize > Globals.PG_buttonframedimensions[1]:
 		#	self.tree1.set_item_width(Globals.PG_buttonframedimensions[0]-self.ScrollFrame.get_vscrollbar().size_request()[0]-4)
 		#else:
 		#	self.tree1.set_item_width(Globals.PG_buttonframedimensions[0]-2)
-		#print time.clock() 
+		#print (time.clock())
 		#self.SetInputFocus()
 		#gc.collect()
-		#print Globals.PG_buttonframedimensions[0]-self.ScrollFrame.size_request()[0]
+		#print (Globals.PG_buttonframedimensions[0]-self.ScrollFrame.size_request()[0])
 		self.tree1.set_model(self.model)
 		self.tree1.thaw_child_notify()
 		self.ScrollFrame.get_vscrollbar().set_value(0)
@@ -2285,7 +2285,7 @@ class ProgramList(gobject.GObject):
 	
 
 	def update_icons(self,client, connection_id=None, entry=None, args=None):
-		print 'icons changed'
+		print ('icons changed')
 		self.XDG.Icon_change()
 		self.Restart('previous')
 
@@ -2308,7 +2308,7 @@ class ProgramList(gobject.GObject):
 
 
 	def map_event(self, widget, event):
-		print 'map'
+		print ('map')
 		self.PopulateButtons()
 
 	def PopulateButtons(self):
