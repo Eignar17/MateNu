@@ -25,7 +25,7 @@ try:
 	import gio
 	isgio = True
 except:
-	print 'gio not found'
+	print ('gio not found')
 	isgio = False
 
 Icontype = ["png", "xpm", "svg"]
@@ -74,7 +74,7 @@ class IconFactory(gobject.GObject):
 	def Icon_change(self):
 		"""Icons have changed"""
 
-		print 'icons changed'
+		print ('icons changed')
 		self.icontheme = gtk.settings_get_default().get_property("gtk-icon-theme-name")
 		self.gtkicontheme = gtk.icon_theme_get_default()
 
