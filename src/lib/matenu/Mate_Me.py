@@ -64,7 +64,7 @@ class MateMenu(gobject.GObject):
 		else:
 			code.append('Exec= xdg-open %s' % execs)
 		code.append('X-MATE-Autostart-enabled=true')
-		#print code
+		#print (code)
 		f = open(starter, 'w')
 		if f:
 			for l in code:
@@ -155,7 +155,7 @@ class MateMenu(gobject.GObject):
 			self.Launcher.Launch(exe,1)
 			self.emit('unmap')
 		elif event.button == 3:
-			print 'right click'
+			print ('right click')
 			self.m.popdown()
 			self.submenushow(parent,name,ico,exe)
 
