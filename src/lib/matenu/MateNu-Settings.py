@@ -806,7 +806,7 @@ class MateNuSettings:
 				base = os.path.basename(filename)
 				tar = tarfile.open(urllib.url2pathname(filename))
 				for tarinfo in tar:
-					print tarinfo.name
+					print (tarinfo.name)
 			except:
 				utils.show_warning('0%s' % _('Error - Theme package is corrupt!'))
 				return	
@@ -843,7 +843,7 @@ class MateNuSettings:
 			return
 		
 		try:
-			print type
+			print (type)
 		except:
 			utils.show_warning('3%s' % _('Error - theme not installed\nMaybe the Theme was packaged incorrectly\nTry to install the Theme manually'))
 			os.system('rm -rf /tmp/matenu')
