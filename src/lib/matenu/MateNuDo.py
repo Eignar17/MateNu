@@ -23,8 +23,8 @@ class MateNu ():
 		mateconf_app_key = '/apps/matenu'
 		self.dokey = '/apps/mate-do/Docky/Utilities/DockPreferences'
 		self.mateconf_client = mateconf.client_get_default()
-		#print self.applet.get_size()
-		#print self.applet.get_position()
+		#print (self.applet.get_size())
+		#print (self.applet.get_position())
 		self.orient = self.mateconf_client.get_string(mateconf_app_key + '/Orientation')
 		if self.orient == 'Top':
 			self.mateconf_client.set_string(mateconf_app_key + '/orientation', 'top')
@@ -37,7 +37,7 @@ class MateNu ():
 			try:
 				wnck.set_client_type(wnck.CLIENT_TYPE_PAGER)
 			except AttributeError:
-				print "Error: Failed to set libwnck client type, window " \
+				print ("Error: Failed to set libwnck client type, window " \)	
 						"activation may not work"
 			screen = wnck.screen_get_default()
 			while gtk.events_pending():
@@ -60,7 +60,7 @@ class MateNu ():
 		#self.theme.connect('changed', self.icon_theme_changed)
 		from Menu_Main import Main_Menu
 		self.hwg = Main_Menu(self.HideMenu)
-		#print self.hwg.window.window.is_visible()
+		#print (self.hwg.window.window.is_visible())
 		self.ShowMenu()
 
 
