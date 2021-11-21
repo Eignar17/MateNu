@@ -13,12 +13,12 @@
 
 try:
 	import matemenu
-	print 'matemenu found, using it as default menu parser'
+	print ('matemenu found, using it as default menu parser')
 	has_matemenu = True
 except:
 	has_matemenu = False
 	import xdg.Menu
-	print 'xdg found, using it as default menu parser'
+	print ('xdg found, using it as default menu parser')
 
 import gobject
 import xdg.BaseDirectory as bd
@@ -27,7 +27,7 @@ try:
 	import gio
 	isgio = True
 except:
-	print 'gio not found'
+	print ('gio not found')
 	isgio = False
 import os
 import Globals
@@ -62,7 +62,7 @@ class MenuParser(gobject.GObject):
 				self.CacheApplications = self.CacheGmenuApplications.get_root_directory()
 
 			if self.CacheApplications is None:
-				print 'unable to parse the menu'
+				print ('unable to parse the menu')
 			else:
 				self.CacheGmenuApplications.add_monitor(self.monitor_callback)
 
@@ -87,12 +87,12 @@ class MenuParser(gobject.GObject):
 				#standard applications.menu with XDG_MENU_PREFIX that may be null
 				self.CacheApplications = xdg.Menu.parse(os.environ.get("XDG_MENU_PREFIX", "") + "applications.menu")
 			except:
-				print 'Error parsing'
+				print ('Error parsing')
 				try:
 					# Some distros rename applications.menu without setting XDG_MENU_PREFIX.
 					self.CacheApplications = xdg.Menu.parse("mate-applications.menu")
 				except:
-					print 'unable to parse the menu'
+					print ('unable to parse the menu')
 	
 	
 			try:
@@ -104,7 +104,7 @@ class MenuParser(gobject.GObject):
 					try:
 						self.CacheSettings = xdg.Menu.parse(os.environ.get("XDG_MENU_PREFIX", "") + "settings.menu")
 					except:
-						print 'unable to parse the settings menu'
+						print ('unable to parse the settings menu')
 
 			self.AppsFile = self.CacheApplications.Filename
 			self.SetFile = self.CacheSettings.Filename
@@ -175,7 +175,7 @@ class MenuParser(gobject.GObject):
 	def MenuChanged(self):
 		"""Called 1 second after menu changes"""
 
-		print 'Menu Changed'
+		print ('Menu Changed')
 		#self.current_file.disconnect_by_func(self.monitor_callback)
 		self.ParseMenus()
 		self.emit('menu-changed')
