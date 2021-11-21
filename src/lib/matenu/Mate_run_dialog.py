@@ -17,14 +17,14 @@ try:
 	from Xlib import X, display, Xatom
 	import Xlib
 except:
-	print "Critical Error: python-xlib not installed. Cannot continue."
+	print ("Critical Error: python-xlib not installed. Cannot continue.")
 	sys.exit ()
 
 def get_atom(display, atom_name):
 
 	atom = XInternAtom(disp, atom_name, False)
 	if atom == None:
-		print "Critical Error: Panel objects (atom) not found"
+		print ("Critical Error: Panel objects (atom) not found")
 		sys.exit ()
 	return atom
 
