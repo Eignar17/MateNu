@@ -36,7 +36,7 @@ class Launcher(gobject.GObject):
 			if c != '':
 				os.system(c)
 		elif tag == 1:
-			print "launching Application"
+			print ("launching Application")
 			self.expl = command.split()
 			#if last item in list begins with the character "%" then remove it and add it after the ' mark
 			self.outcommand = ""
@@ -52,7 +52,7 @@ class Launcher(gobject.GObject):
 
 
 	def LookUpCommand(self,command):
-		print command
+		print (command)
 		if command.lower() == 'home':
 			command= os.path.expanduser("~")
 			return 'xdg-open %s &' % command
@@ -79,7 +79,7 @@ class Launcher(gobject.GObject):
 			self.emit('special-command')
 			return ""
 			
-		print "%s - Running custom command" % str(command)
+		print ("%s - Running custom command" % str(command))
 		return Globals.SecurityCheck('%s &' % command)
 
 
