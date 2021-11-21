@@ -24,7 +24,7 @@ def get_atom(display, atom_name):
 
 	atom = XInternAtom(disp, atom_name, False)
 	if atom == None:
-		print "This action requires python xlib installed, please install it for the menu to appear"
+		print ("This action requires python xlib installed, please install it for the menu to appear")
 		sys.exit ()
 	return atom
 
