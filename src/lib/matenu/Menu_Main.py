@@ -66,7 +66,7 @@ class Main_Menu(gobject.GObject):
 	first_time = True
 	def __init__(self, hide_method):
 		gobject.GObject.__init__(self)
-		print 'start'
+		print ('start')
 		self.searchitem = ''
 		self.hide_method = hide_method
 		#Set the main working directory to home
@@ -102,7 +102,7 @@ class Main_Menu(gobject.GObject):
 			self.supports_alpha = False
 		else:
 			self.supports_alpha = True
-		#print self.sys_get_window_manager()
+		#print (self.sys_get_window_manager())	
 		#try:
 		#	if self.sys_get_window_manager() == 'compiz':
 		#		pass#self.window.set_type_hint(gtk.gdk.WINDOW_TYPE_HINT_MENU)
@@ -153,7 +153,7 @@ class Main_Menu(gobject.GObject):
 
 
 	def ToggleMenu(self):
-		print self.visible
+		print (self.visible)
 		if not self.window.window:
 			self.emit('state-changed',2,2)
 			self.show_window()
@@ -172,7 +172,7 @@ class Main_Menu(gobject.GObject):
 #Key binding
 #=================================================================
 	def bindkey_callback(self,keybinding):
-		print 'key'
+		print ('key')
 		self.ToggleMenu()
 
 	def bind_with_keybinder(self):
@@ -183,7 +183,7 @@ class Main_Menu(gobject.GObject):
 		try:
 			import keybinder as bindkey
 			bindkey.bind(Globals.Settings['Bind_Key'], self.ToggleMenu)			
-			print 'python keybinder found - binding'
+			print ('python keybinder found - binding')
 		except:
 			self.bind_with_deskbar()
 
@@ -199,14 +199,14 @@ class Main_Menu(gobject.GObject):
 			try:
 				from _keybinder import tomboy_keybinder_bind as bindkey
 				bindkey(Globals.Settings['Bind_Key'], self.ToggleMenu)			
-				print 'deskbar found - binding'
+				print ('deskbar found - binding')
 			except:
 				self.bind_with_custom()
 		else:
 			self.bind_with_custom()
 
 	def bind_with_custom(self):
-		print 'Using own key method - binding'
+		print ('Using own key method - binding')
 		x = commands.getoutput('xmodmap')
 		if x.find('Super_L') == '-1' and Globals.Settings['Bind_Key'] == 'Super_L':
 			os.system("xmodmap -e 'keycode 115 = Super_L'")
@@ -224,7 +224,7 @@ class Main_Menu(gobject.GObject):
 			if Globals.FirstUse:
 				utils.show_message('Please install python xlib')
 			else:
-				print 'Please install python xlib'
+				print ('Please install python xlib')
 
 #=================================================================
 #WINDOW SETUP
@@ -247,7 +247,7 @@ class Main_Menu(gobject.GObject):
 
 	def shape(self):
 		#Standard shape setup of window
-		print 'shaping window'
+		print ('shaping window')
 		w,h = self.window.get_size()
 		if w==0: w = 100
 		if h==0: h = 100
@@ -379,7 +379,7 @@ class Main_Menu(gobject.GObject):
 				#self.SearchBar.connect("activate",self.SearchBarActivate)
 	
 				self.SearchBar.connect_after("key-release-event",self.SearchBarActivate)
-			except:print 'wait'
+			except:print ('wait')
 			self.prevsearchitem = ""
 
 		#Tab Buttons
@@ -439,7 +439,7 @@ class Main_Menu(gobject.GObject):
 
 	def show_window(self):
 		# This will fail if focus stealing prevention is enabled!
-		print 'show'
+		print ('show')
 		self.window.set_keep_above(1)
 		if not self.window.window:
 			self.window.show_all()
@@ -457,12 +457,12 @@ class Main_Menu(gobject.GObject):
 		self.PlaySound(0)
 		
 	def lose_focus(self,widget,event):
-		print 'focus lost'
+		print ('focus lost')
 		if self.leave_focus is True:
 			self.hide_method()
 
 	def hide_window(self):
-		print 'hide'
+		print ('hide')
 
 		self.window.hide()
 		if Globals.MenuTabCount == 0:
@@ -738,7 +738,7 @@ class Main_Menu(gobject.GObject):
 
 	def timeout_callback_search(self):
 		self.PGL.CallSpecialMenu(5,self.searchitem)
-		print 'search'
+		print ('search')
 		return False
 
 # Code to launch menu standalone of base classes
