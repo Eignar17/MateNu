@@ -230,7 +230,7 @@ class MateNu(mateapplet.Applet):
 				sys.exit()
 
 	def map_event(self, widget, event):
-		print 'map'
+		print ('map')
 		if Globals.ShowTop == 1 and  Globals.Settings["Distributor_Logo"] == 0:
 			#Create auxiliary window (CAIRO)
 			from Panel_Top import PanelTopWindow
@@ -257,7 +257,7 @@ class MateNu(mateapplet.Applet):
 
 	def update_panel_position(self):
 		if self.x != self.oldx and self.hwg != None:
-			print 'position changed'
+			print ('position changed')
 			self.Redraw_graphics()
 			self.Update_Panel_Top()
 			if Globals.ShowTop == 1 and self.aux != None and Globals.Settings["Distributor_Logo"] == 0:
@@ -275,7 +275,7 @@ class MateNu(mateapplet.Applet):
 				self.size = entry.get_value().get_int()
 			except:self.size = 30
 		if self.size != self.oldsize and self.hwg :
-			print 'size changed'
+			print ('size changed')
 			self.Redraw_graphics()
 			self.Update_Panel_Top()
 			if Globals.ShowTop == 1 and self.aux != None and Globals.Settings["Distributor_Logo"] == 0:
@@ -369,11 +369,11 @@ class MateNu(mateapplet.Applet):
 		self.Update_Panel_Top()
 		if Globals.ShowTop == 1 and Globals.Settings["Distributor_Logo"] == 0:
 			self.aux.updateimage(Globals.StartButtonTop[self.Button_state ])
-		print button
+		print (button)
 
 		
 	def cleanup(self,event):
-		print "cleanup"
+		print ("cleanup")
 
 		self.hwg.destroy()
 		if Globals.ShowTop == 1:
@@ -442,7 +442,7 @@ class MateNu(mateapplet.Applet):
 			if self.scale:
 				self.aux.set_scale(self.scale)
 			StartButtonTopHeight = self.aux.get_height()
-			print "Reorientating Orb top!! (Don't let this happen too often!!)"
+			print ("Reorientating Orb top!! (Don't let this happen too often!!)")
 			Window_x =  self.x
 			if self.orientation == 'top':
 				Window_y =  0 + self.size
