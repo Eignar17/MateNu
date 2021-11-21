@@ -28,13 +28,13 @@ import Launcher
 
 try:
 	import bookmarks
-except:print 'error importing webbookmarks'
+except:print ('error importing webbookmarks')
 
 try:
 	import gio
 	isgio = True
 except:
-	print 'gio not found'
+	print ('gio not found')
 	isgio = False
 try:
 	INSTALL_PREFIX = open("/etc/matenu/prefix").read()[:-1] 
@@ -108,7 +108,7 @@ class XDMateMenu(gobject.GObject):
 		##### Construct the menu###########################
 		self.menuitems = 'settings','places','auxiliary','recent','recentapps','webbookmarks','favorites','shutdown','all'
 		for item in self.menuitems:
-			#print 'Loading item to memory: ',item
+			#print ('Loading item to memory: ',item)
 			self.Restart(item)
 		gc.collect()
 
@@ -194,7 +194,7 @@ class XDMateMenu(gobject.GObject):
 
 	def onRecentChanged(self, manager):
 		"""Recent files have changed"""
-		print 'recents changed'
+		print ('recents changed')
 		self.recents_changed = True
 		try:
 			del self.menucache["<RecentItems>"]
@@ -205,7 +205,7 @@ class XDMateMenu(gobject.GObject):
 
 	def on_drive_changed (self,widget,drive):
 		"""Bookmarks have changed"""
-		print 'drives changed'
+		print ('drives changed')
 		del self.menucache["<Bookmarks>"]
 		if self.BaseMenu == "<Bookmarks>":
 			self.emit('changed')
@@ -291,7 +291,7 @@ class XDMateMenu(gobject.GObject):
 					self.webbookmarker = bookmarks.BookmarksMenu().getBookmarks()
 				for item in map(list,self.webbookmarker):
 					self.addtomenu(item[0],item[3],3,item[1],item[1])	
-			except:print 'Error reading web bookmarks'
+			except:print ('Error reading web bookmarks')
 			
 		#==============================================================
 		#SHUTDOWN MENU
@@ -351,7 +351,7 @@ class XDMateMenu(gobject.GObject):
 				else:
 					app = item.last_application()
 					appinfo = item.get_application_info(app)
-					#print appinfo[0].split(' ')[0]
+					#print (appinfo[0].split(' ')[0])
 					if app not in self.L_Names:
 						self.addtomenu(app,appinfo[0].split(' ')[0],1,"",appinfo[0].split(' ')[0])
 						x = x +1
@@ -451,7 +451,7 @@ class XDMateMenu(gobject.GObject):
 						self.AddBackButton()
 		#gc.collect()
 
-		#print time.clock() -aaa
+		#print (time.clock() -aaa)
 		self.menucache[self.menustring] = self.L_Names, self.L_Icons, self.L_Icons_menu, self.L_Types, self.L_Paths, self.L_Execs
 
 	def SearchMenu(self, folder):
@@ -711,7 +711,7 @@ class XDMateMenu(gobject.GObject):
 		else:
 			code.append('Exec= xdg-open %s' % execs)
 		code.append('X-MATE-Autostart-enabled=true')
-		#print code
+		#print (code)
 		f = open(starter, 'w')
 		if f:
 			for l in code:
