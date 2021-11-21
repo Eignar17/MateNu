@@ -29,7 +29,7 @@ try:
 	Has_Numpy = True
 except:
 	Has_Numpy = False
-	print 'python numpy not installed , some effects and gtk native colors wont be available'
+	print ('python numpy not installed , some effects and gtk native colors wont be available')
 import gettext
 gettext.textdomain('matenu')
 gettext.install('matenu', INSTALL_PREFIX +  '/share/locale')
@@ -42,7 +42,7 @@ global name,version,appdirname
 name = "MateNu"
 version = "1.0"
 appdirname="matenu"
-print '%s %s' % (name, version)
+print ('%s %s' % (name, version))
 ############ Set up global directories #########################
 ################################################################
 HomeDirectory = os.path.expanduser("~")
@@ -88,7 +88,7 @@ def ReloadSettings():
 		FirstUse = True
 
 	def GetSettings():
-		print 'settings load'
+		print ('settings load')
 		for x in DefaultSettings:
 			Settings[x] = backend.load_setting(x)
 
@@ -157,7 +157,7 @@ def ReloadSettings():
 	try:
 		XMLSettings = xml.dom.minidom.parse("%sthemedata.xml" % ImageDirectory)
 	except:
-		print "Error loading Menu theme, reverting to default"
+		print ("Error loading Menu theme, reverting to default")
 		SetDefaultSettings()
 		XMLSettings = xml.dom.minidom.parse("%sthemedata.xml" % ImageDirectory)
 	XContent = XMLSettings.childNodes[0].getElementsByTagName("theme")
@@ -176,10 +176,10 @@ def ReloadSettings():
 			Found = 1
 			break
 	if Found==0:
-		print "Error: Failed to find theme color: %s" % ThemeColor
-		print "The available values are:"
+		print ("Error: Failed to find theme color: %s" % ThemeColor)
+		print ("The available values are:")
 		for node in XContent:
-			print node.attributes["color"].value
+			print (node.attributes["color"].value)
 		sys.exit()
 		
 	# Load Background Image
@@ -305,7 +305,7 @@ def ReloadSettings():
 		try:
 			im = gtk.gdk.pixbuf_new_from_file(ImageDirectory + node.attributes["Image"].value)
 		except:
-			print 'Warning - Error loading theme, reverting to defaults'
+			print ('Warning - Error loading theme, reverting to defaults')
 			SetDefaultSettings()
 		h = im.get_height()
 		
@@ -434,7 +434,7 @@ def ReloadSettings():
 		except:
 			try:
 				MenuCairoIcontabX.append(int(node.attributes["IconX"].value)) 
-				print 'WARNING - IconX is deprecated , use TabIconX instead'
+				print ('WARNING - IconX is deprecated , use TabIconX instead')
 			except:
 				MenuCairoIcontabX.append(0) 
 		try:
@@ -442,7 +442,7 @@ def ReloadSettings():
 		except:
 			try:
 				MenuCairoIcontabY.append(int(node.attributes["IconY"].value)) 
-				print 'WARNING - IconY is deprecated , use TabIconY instead'
+				print ('WARNING - IconY is deprecated , use TabIconY instead')
 			except:
 				MenuCairoIcontabY.append(0) 
 
@@ -451,7 +451,7 @@ def ReloadSettings():
 		except:
 			try:
 				MenuCairoIcontabSize.append(int(node.attributes["IconSize"].value)) 
-				print 'WARNING - IconSize is deprecated , use TabIconSize instead'
+				print ('WARNING - IconSize is deprecated , use TabIconSize instead')
 			except:
 				MenuCairoIcontabSize.append(0)
 
@@ -503,7 +503,7 @@ def ReloadSettings():
 	try:
 		XMLSettings = xml.dom.minidom.parse(MenuButtonDirectory+"themedata.xml")
 	except:
-		print "Error loading Menu button theme, reverting to default"
+		print ("Error loading Menu button theme, reverting to default")
 		SetDefaultSettings()
 		XMLSettings = xml.dom.minidom.parse(MenuButtonDirectory+"themedata.xml")
 	XBase = XMLSettings.getElementsByTagName("theme")
@@ -567,8 +567,8 @@ String_list_translated = [_('Start'),_('Menu'),_('Control Panel'),_('Favorites')
 try:
 	ReloadSettings()
 except:
-	print '**WARNING** - Unable to load settings, using defaults'
-	print "Traceback: \n" , sys.exc_info()
+	print ('**WARNING** - Unable to load settings, using defaults')
+	print ("Traceback: \n" , sys.exc_info())
 	SetDefaultSettings()
 	ReloadSettings()
 
