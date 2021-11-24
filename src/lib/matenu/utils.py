@@ -13,10 +13,7 @@
 
 
 
-import gtk
-import pygtk
-pygtk.require('2.0')
-import gobject
+from gi.repository import GObject as gobject, Gtk as gtk, Gdk as gdk
 import os
 import dbus
 BUS = dbus.SessionBus()
@@ -32,8 +29,8 @@ except:pass
 		
 def show_message (message, title='MateNu'):
 
-	md = gtk.MessageDialog(None, type=gtk.MESSAGE_INFO, 
-			buttons=gtk.BUTTONS_OK)
+	md = gtk.MessageDialog(None, type=Gtk.MessageType.INFO, 
+			buttons=Gtk.ButtonsType.OK)
 	md.set_title(title)
 	md.set_markup(str(message))
 	md.run()
@@ -41,8 +38,8 @@ def show_message (message, title='MateNu'):
 
 def show_warning (message, title='MateNu'):
 
-	md = gtk.MessageDialog(None, type=gtk.MESSAGE_WARNING, 
-			buttons=gtk.BUTTONS_OK)
+	md = gtk.MessageDialog(None, type=Gtk.MessageType.WARNING, 
+			buttons=gtk.ButtonsType.OK)
 	md.set_title(title)
 	print (message)
 	md.set_markup(str(message))
@@ -51,13 +48,13 @@ def show_warning (message, title='MateNu'):
 
 
 def show_question (message, title='MateNu'):
-	md = gtk.MessageDialog(None, type=gtk.MESSAGE_QUESTION, 
-			buttons=gtk.BUTTONS_YES_NO)
+	md = gtk.MessageDialog(None, type=Gtk.MessageType.QUESTION, 
+			buttons=Gtk.ButtonsType.YES_NO)
 	md.set_title(title)
 	md.set_markup(message)
 	response = md.run()
 	md.destroy()
-	if response == gtk.RESPONSE_YES:
+	if response == Gtk.ResponseType.YES:
 		return True
 	return False
 
@@ -92,7 +89,7 @@ def sys_get_window_manager():
 
 def get_image_size(pix):
 	"""Gets a picture width and height"""
-	pixbuf = gtk.gdk.pixbuf_new_from_file(pix)
+	pixbuf = gdkPixbuf.pixbuf.new_from_file(pix)
 	iw = pixbuf.get_width()
 	ih = pixbuf.get_height()
 	puxbuf = None
