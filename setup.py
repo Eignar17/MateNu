@@ -28,7 +28,7 @@ a.close()
 
 print ('Preparing to install translation')
 podir = os.path.join (os.path.realpath ("."), "po")
-print podir
+print (podir)
 if os.path.isdir (podir):
 	print ('installing translations')
 	buildcmd = "msgfmt -o src/share/locale/%s/LC_MESSAGES/%s.mo po/%s.po"
