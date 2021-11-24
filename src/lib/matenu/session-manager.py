@@ -33,14 +33,14 @@ else:
 	try:
 		devobj = bus.get_object('org.mate.PowerManagement', 'org/mate/PowerManagement')
 		power = dbus.Interface(devobj, "org/mate/PowerManagement")
-		print ("using mate < 2.28")
+		print ("using mate < 1.26.0")
 	except:
 		try:
 			# patched version http://www.electric-spoon.com/doc/mate-session/dbus/mate-session.html#org.mate.SessionManager.RequestReboot
 			# normal version http://people.gnome.org/~mccann/mate-session/docs/mate-session.html
 			devobj = bus.get_object('org.mate.SessionManager', '/org/mate/SessionManager')
 			power2 = dbus.Interface(devobj, "org.mate.SessionManager")
-			print ("using mate >= 2.28")
+			print ("using mate >= 1.26.0")
 		except:
 			devobj = bus.get_object('org.kde.ksmserver', '/KSMServer')
 			power4 = dbus.Interface(devobj, "org.kde.KSMServerInterface")	
