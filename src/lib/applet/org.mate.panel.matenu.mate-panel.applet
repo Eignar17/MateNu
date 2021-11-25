@@ -1,0 +1,12 @@
+[Applet Factory]
+Id=TiloMenuAppletFactory
+InProcess=false
+Location=/usr/lib/matenu/MateNu.py
+Name=MateNu Applet Factory
+Description=Customizable Start Menu for the MATE Desktop
+
+[TiloMenu]
+Name=MateNu
+Description=Customizable Start Menu for the MATE Desktop
+Icon=mate
+MateComponentId=OAFIID:MATE_matenu;

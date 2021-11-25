@@ -1,0 +1,3 @@
+[D-BUS Service]
+Name=org.mate.panel.matenu.mate-panel.applet
+Exec=/usr/lib/matenu/MateNu.py
