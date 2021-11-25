@@ -92,6 +92,12 @@ cd "path of where you extracted the tar.gz"
 
 sudo make install
 
+
+For KDE
+Try a manual install by runing the command "-plasmapkg -i src/share/plasma/plasmoids/MateNu.zip" as normal user.
+
+
+
 (depending on the distribution the "sudo" command my change)
 
 Then go to your mate-panel , right click, add to panel, and select MateNu
