@@ -46,7 +46,7 @@ install:
 	#-cp -r src/share/cairo-dock ~/.config/
 	-install src/bin/MateNu.py $(DESTDIR)$(PREFIX)/bin/
 	-install src/lib/matecomponent/MATE_MateNu.server $(DESTDIR)$(LIBDIR)/matecomponent/servers
-	-plasmapkg -i src/share/plasma/plasmoids/MateNu.zip -p $(DESTDIR)$(PREFIX)/share/kde4/apps/plasma/plasmoids
+       #-plasmapkg -i src/share/plasma/plasmoids/MateNu.zip -p $(DESTDIR)$(PREFIX)/share/kde4/apps/plasma/plasmoids # Try running the "-plasmapkg -i src/share/plasma/plasmoids/MateNu.zip" as normal user
 	@echo "Makefile: MateNu installed."
 
 
@@ -59,13 +59,13 @@ uninstall:
 	rm -rf $(PREFIX)/share/avant-window-navigator/applets/MateNu
 	#rm -rf $(PREFIX)/share/xfce4/panel-plugins/MateNu.desktop
 	rm -rf $(PREFIX)/bin/MateNu.py
-	rm -rf $(PREFIX)/share/kde4/apps/plasma/plasmoids/MateNu
+        #rm -rf $(PREFIX)/share/kde4/apps/plasma/plasmoids/MateNu
 	rm -rf $(LIBDIR)/matecomponent/servers/MATE_MateNu.server
 	rm -rf /etc/matenu/prefix
 	rm -rf ~/.matenu
 	rm -rf ~/.config/cairo-dock/third-party/MateNu
 	rm -rf $(PREFIX)/share/dockmanager/scripts/MateNu
 	rm -rf $(PREFIX)/share/dockmanager/scripts/MateNu.py
-	plasmapkg -r MateNu
+        #plasmapkg -r MateNu
 
 
