@@ -63,8 +63,6 @@ You can find info on distribution packages here: https://answers.launchpad.net/m
 2.1 Dependencies:
 -----------------
 
-* Depends:
-
 python
 python-xdg
 python-cairo
