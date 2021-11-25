@@ -14,19 +14,17 @@
 # This is free software made available under the GNU public license.
 # Use 'run-in-window' command switch for development testing
 
-import gtk
-import pygtk
-pygtk.require('2.0')
-import commands
-import sys
-import gobject
-import mateapplet
+import gi
+gi.require_version("Gtk", "2.0")
+
+from gi.repository import Gtk
+from gi.repository import MatePanelApplet as mateapplet
+from gi.repository import Gio
+
 import os
 
 if not os.path.exists(os.path.expanduser("~") + '/.matenu') or not os.path.isdir(os.path.expanduser("~") + '/.matenu'):
 	os.system('mkdir ~/.matenu')
-
-import mateconf
 
 try:
 	INSTALL_PREFIX = open("/etc/matenu/prefix").read()[:-1] 
@@ -49,7 +47,7 @@ gettext.bindtextdomain('matenu', INSTALL_PREFIX +  '/share/locale')
 def _(s):
 	return gettext.gettext(s)
 
-class MateNu(mateapplet.Applet):
+class MateNu(mateapplet.applet):
 
 	def __init__(self,applet,iid):
 		self.panel_size = 24
