@@ -11,11 +11,13 @@
 #
 # Icon factory
 # Part of the MateNu
+import gi
+gi.require_version("Gtk", "2.0")
+from gi.repository import Gtk
+from gi.repository import GObject
 
-import gtk
 import os
 import xml.dom.minidom
-import gobject
 import utils
 import Globals
 import gc
@@ -23,7 +25,7 @@ import urllib
 import xdg.IconTheme
 import xdg.BaseDirectory as bd
 try:
-	import gio
+from gi.repository import Gio
 	isgio = True
 except:
 	print 'gio not found'
@@ -47,7 +49,7 @@ def _(s):
 def GetSystemIcon(icon):
 	for n in Icontype:
 		icon = str(icon).replace('.' + n,'')
-	ico = Globals.GtkIconTheme.lookup_icon(icon,48,gtk.ICON_LOOKUP_FORCE_SVG)
+	ico = Globals.GtkIconTheme.lookup_icon(icon,48,Gtk.IconLookupFlags.FORCE_SVG)
 	if ico:
 		ico = ico.get_filename()
 	else:
@@ -55,7 +57,7 @@ def GetSystemIcon(icon):
 	return ico
 
 class IconFactory(gobject.GObject):
-	__gsignals__ = {"icons-changed" : (gobject.SIGNAL_RUN_LAST, gobject.TYPE_NONE, ()),
+	__gsignals__ = {"icons-changed" : (GObject.SignalFlags.RUN_LAST, None, ()),
         }
 	def __init__(self):
 		gobject.GObject.__init__(self)
@@ -64,8 +66,8 @@ class IconFactory(gobject.GObject):
 			self.thumbnailer = utils.thumbnailengine(Globals.PG_iconsize)
 			self.thumbnailer.connect("worklist-finished", lambda m: self.emit('icons-changed'))
 
-		##### looksup icon theme in gtk, we could also use : mateconf.client_get_default().get_string('/desktop/mate/interface/icon_theme')
-		self.gtkicontheme = gtk.icon_theme_get_default()
+		##### looksup icon theme in gtk, we could also use : GConf.Client.get_default().get_string('/desktop/mate/interface/icon_theme')
+		self.gtkicontheme = Gtk.IconTheme.get_default()
 		self.icontheme = Globals.DefaultIconTheme
 		self.old_icontheme = self.icontheme
 		###### Check if icon theme is stored in cache#################
@@ -76,8 +78,8 @@ class IconFactory(gobject.GObject):
 		"""Icons have changed"""
 
 		print 'icons changed'
-		self.icontheme = gtk.settings_get_default().get_property("gtk-icon-theme-name")
-		self.gtkicontheme = gtk.icon_theme_get_default()
+		self.icontheme = Gtk.Settings.get_default().get_property("gtk-icon-theme-name")
+		self.gtkicontheme = Gtk.IconTheme.get_default()
 
 	def getgicon(self,gico):
 		"""Returns gio icon"""
@@ -96,11 +98,11 @@ class IconFactory(gobject.GObject):
 				return item.get_icon(Globals.PG_iconsize)
 			if isgio:
 				self.gfile = gio.File(path)
-				self.info = self.gfile.query_info(gio.FILE_ATTRIBUTE_THUMBNAIL_PATH, gio.FILE_QUERY_INFO_NONE)
+				self.info = self.gfile.query_info(gio.FILE_ATTRIBUTE_THUMBNAIL_PATH, Gio.FileQueryInfoFlags.NONE)
 				thumbfile = self.info.get_attribute_as_string(gio.FILE_ATTRIBUTE_THUMBNAIL_PATH)
 				if thumbfile:
 					if os.path.isfile(thumbfile): 
-						return gtk.gdk.pixbuf_new_from_file_at_size(thumbfile, Globals.PG_iconsize, Globals.PG_iconsize)
+						return GdkPixbuf.Pixbuf.new_from_file_at_size(thumbfile, Globals.PG_iconsize, Globals.PG_iconsize)
 					else:return item.get_icon(Globals.PG_iconsize)
 				else:return item.get_icon(Globals.PG_iconsize)
 
@@ -118,7 +120,7 @@ class IconFactory(gobject.GObject):
 
 	def geticonfile(self,icon):
 			if self.gtkicontheme.has_icon(icon):
-				pix = self.gtkicontheme.load_icon(icon,Globals.PG_iconsize,gtk.ICON_LOOKUP_FORCE_SIZE)
+				pix = self.gtkicontheme.load_icon(icon,Globals.PG_iconsize,Gtk.IconLookupFlags.FORCE_SIZE)
 				return pix
 			# lockup icon in xdg icon theme
 			else:
@@ -126,12 +128,12 @@ class IconFactory(gobject.GObject):
 					for subdir in ('pixmaps', 'icons'):
 						path = os.path.join(dir_, subdir, icon)
 						if os.path.isfile(path):
-							pix = gtk.gdk.pixbuf_new_from_file_at_size(path,Globals.PG_iconsize,Globals.PG_iconsize)
+							pix = GdkPixbuf.Pixbuf.new_from_file_at_size(path,Globals.PG_iconsize,Globals.PG_iconsize)
 							return pix
 			if os.path.isfile(icon):
-				pix = gtk.gdk.pixbuf_new_from_file_at_size(icon, Globals.PG_iconsize, Globals.PG_iconsize)
+				pix = GdkPixbuf.Pixbuf.new_from_file_at_size(icon, Globals.PG_iconsize, Globals.PG_iconsize)
 				return pix
-			pix = self.gtkicontheme.load_icon('gtk-missing-image',Globals.PG_iconsize,gtk.ICON_LOOKUP_FORCE_SIZE)
+			pix = self.gtkicontheme.load_icon('gtk-missing-image',Globals.PG_iconsize,Gtk.IconLookupFlags.FORCE_SIZE)
 			return pix
 
 
