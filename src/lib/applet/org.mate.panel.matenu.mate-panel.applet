@@ -5,7 +5,7 @@ Location=/usr/lib/matenu/MateNu.py
 Name=MateNu Applet Factory
 Description=Customizable Start Menu for the MATE Desktop
 
-[TiloMenu]
+[MateNu]
 Name=MateNu
 Description=Customizable Start Menu for the MATE Desktop
 Icon=mate
